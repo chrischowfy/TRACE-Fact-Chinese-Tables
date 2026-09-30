@@ -1,0 +1,17 @@
+{
+ "model": "deepseek-v4-pro",
+ "setting": "claim-only",
+ "base_url": "https://api.deepseek.com",
+ "temperature": 0.0,
+ "max_tokens": 2048,
+ "extra": "{\"thinking\": {\"type\": \"disabled\"}}",
+ "no_json_mode": false,
+ "system_prompt": "You are a careful Chinese table fact-checking assistant. Judge the claim using only the information given in the input. Output one JSON object and nothing else.",
+ "evaluation_code_sha256": {
+  "common.py": "279f0260dad6a20b1c4862194b9f91d19705a5219db345586f520f2ec303d123",
+  "direct.py": "160b1d2a093394a583c39d92fde3173fbbe9e23b809e9e86e285c12ff8b08c98",
+  "sql_agents.py": "392da86b672a9595e344bc06787f0bbc45593f8790d4103db6070a3b1a99d810",
+  "tables.py": "8110583152e6c0dbf86de1942df1d63cf5a0c58dc8c5ed2e9ea9aa18a18320d3"
+ },
+ "started_at_utc": "2026-09-28T07:06:57.086092+00:00"
+}

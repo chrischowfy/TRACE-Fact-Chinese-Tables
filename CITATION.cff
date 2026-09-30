@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use TRACE-Fact, please cite it as below."
+title: "TRACE-Fact: A Program-Grounded Benchmark with Traceable Evidence for Chinese Table Fact Verification"
+authors:
+  - family-names: "Zhao"
+    given-names: "Guangzhen"
+  - family-names: "Ye"
+    given-names: "Ruitong"
+  - family-names: "Hu"
+    given-names: "Shengkai"
+  - family-names: "Hui"
+    given-names: "Xinyi"
+  - family-names: "Wu"
+    given-names: "Tongyu"
+  - family-names: "Kong"
+    given-names: "Dechang"
+  - family-names: "Dong"
+    given-names: "Zhenjiang"
+repository-code: "https://github.com/chrischowfy/TRACE-Fact-Chinese-Tables"
+license: CC-BY-SA-4.0

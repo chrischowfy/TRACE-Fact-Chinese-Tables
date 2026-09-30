@@ -1,0 +1,56 @@
+{
+ "status": "source_induced_skeleton_registry",
+ "min_support": 3,
+ "sources_manifest_sha256": "6ae9600dfe4872a94a767ec7cac79a74d207b4eaa5cddfb294d3ac8378a5b934",
+ "per_source": {
+  "tabfact": {
+   "parsed": 1499,
+   "verified": 1214
+  },
+  "wtq": {
+   "parsed": 256,
+   "verified": 176
+  },
+  "tatqa": {
+   "parsed": 4516,
+   "verified": 4030
+  },
+  "multimodalqa": {
+   "parsed": 8984,
+   "verified": 7984,
+   "composition:single:verified": 3753,
+   "composition:bridge:verified": 3013,
+   "composition:parallel:verified": 693,
+   "composition:single:unverified": 632,
+   "composition:within_table_two_hop:verified": 525,
+   "composition:bridge:unverified": 358,
+   "composition:within_table_two_hop:unverified": 5,
+   "composition:parallel:unverified": 5
+  },
+  "hybridqa": {
+   "parsed": 66148,
+   "verified": 35353,
+   "composition:ambiguous:unverified": 30795,
+   "composition:bridge:verified": 22657,
+   "composition:single:verified": 12696
+  },
+  "feverous": {
+   "parsed": 50001,
+   "verified": 50001,
+   "composition:single_table:verified": 24135,
+   "composition:table_text:verified": 19475,
+   "composition:multi_table:verified": 6391
+  }
+ },
+ "core_cards": 268,
+ "admitted_core_cards": 116,
+ "admitted_core_support_by_source": {
+  "tabfact": 1130,
+  "wtq": 140,
+  "tatqa": 3932,
+  "multimodalqa": 4275
+ },
+ "bridge_compositions_verified": 3013,
+ "multi_table_compositions_verified": 6873,
+ "nei_evidence_sets": 1286
+}

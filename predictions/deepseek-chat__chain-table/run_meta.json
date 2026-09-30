@@ -1,0 +1,16 @@
+{
+ "model": "deepseek-chat",
+ "setting": "chain-table",
+ "base_url": "https://api.deepseek.com",
+ "temperature": 0,
+ "max_tokens": 2048,
+ "extra": "{\"thinking\":{\"type\":\"disabled\"}}",
+ "system_prompt": "你使用可执行表格操作核查中文声明。只能依据输入表格，不使用外部知识。\nSUPPORTS=表格支持；REFUTES=表格反驳；NEI=给定表格信息不足。未知不是错误，false AND unknown 仍为 REFUTES。\n每次只输出一个 JSON。可以输出 {\"label\":\"SUPPORTS|REFUTES|NEI\",\"rationale\":\"简短依据\"} 结束，\n或选择一个操作。table 使用 t0、t1 或步骤生成的 s1 等名字；行号和列号从 0 开始。\n支持以下操作（用真实参数替换示例，不要包含 op 之外的代码）：\n{\"op\":\"select_rows\",\"table\":\"t0\",\"rows\":[0,2]}\n{\"op\":\"select_columns\",\"table\":\"t0\",\"columns\":[0,2]}\n{\"op\":\"sort\",\"table\":\"t0\",\"column\":1,\"numeric\":true,\"descending\":true}\n{\"op\":\"group_count\",\"table\":\"t0\",\"column\":1}\n{\"op\":\"aggregate\",\"table\":\"t0\",\"column\":1,\"method\":\"sum|mean|min|max|count\"}\n{\"op\":\"derive\",\"table\":\"t0\",\"left\":1,\"right\":2,\"method\":\"subtract|add|ratio\"}\n{\"op\":\"join\",\"table\":\"t0\",\"other\":\"t1\",\"left\":0,\"right\":0}\n操作由环境执行，不要编造新单元格。原始表始终保留，操作生成新表。筛选造成的信息缺失不等于原表信息不足。\n聚合只覆盖给定行，不能擅自当成整个现实总体。比分、日期、区间不能当作单一数值。",
+ "evaluation_code_sha256": {
+  "common.py": "279f0260dad6a20b1c4862194b9f91d19705a5219db345586f520f2ec303d123",
+  "direct.py": "160b1d2a093394a583c39d92fde3173fbbe9e23b809e9e86e285c12ff8b08c98",
+  "sql_agents.py": "392da86b672a9595e344bc06787f0bbc45593f8790d4103db6070a3b1a99d810",
+  "tables.py": "8110583152e6c0dbf86de1942df1d63cf5a0c58dc8c5ed2e9ea9aa18a18320d3"
+ },
+ "started_at_utc": "2026-09-28T07:22:27.255197+00:00"
+}

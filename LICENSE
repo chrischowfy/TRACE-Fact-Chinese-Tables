@@ -1,0 +1,30 @@
+TRACE-Fact dataset — Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0)
+
+The TRACE-Fact dataset files under data/ are licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License. The dataset is derived from Chinese
+Wikipedia (https://zh.wikipedia.org), which is itself released under CC BY-SA 4.0; this
+ShareAlike license is therefore inherited and required.
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the license, and
+    indicate if changes were made. For each table, retain the `source_url` and `revision_id`
+    fields provided in the data so that the originating Chinese Wikipedia page and revision
+    can be credited.
+  - ShareAlike — If you remix, transform, or build upon the material, you must distribute
+    your contributions under the same license as the original.
+  - No additional restrictions — You may not apply legal terms or technological measures that
+    legally restrict others from doing anything the license permits.
+
+Full legal text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+License summary:   https://creativecommons.org/licenses/by-sa/4.0/
+
+Attribution example:
+  "TRACE-Fact, derived from Chinese Wikipedia (CC BY-SA 4.0). Source pages and revisions are
+   listed per table via `source_url` and `revision_id`."
+
+The code under scripts/ is licensed separately under the MIT License; see LICENSE-CODE.

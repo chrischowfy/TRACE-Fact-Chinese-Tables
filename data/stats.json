@@ -1,0 +1,284 @@
+{
+ "claims": 1796,
+ "labels": {
+  "SUPPORTS": 708,
+  "REFUTES": 818,
+  "NEI": 270
+ },
+ "evidence_packages": 955,
+ "source_pages": 316,
+ "distinct_tables_in_packages": 871,
+ "raw_wikipedia_tables": 635,
+ "avg_evidence_cells_decidable": 29.99,
+ "skeletons": 24,
+ "groups": 6,
+ "group_by_label": {
+  "Category decomposition": {
+   "SUPPORTS": 126,
+   "NEI": 47,
+   "REFUTES": 188
+  },
+  "Cross-period growth": {
+   "SUPPORTS": 90,
+   "NEI": 71,
+   "REFUTES": 124
+  },
+  "Join-filter aggregation": {
+   "SUPPORTS": 11,
+   "REFUTES": 13,
+   "NEI": 8
+  },
+  "Real-join rank–bridge": {
+   "REFUTES": 55,
+   "SUPPORTS": 57,
+   "NEI": 24
+  },
+  "Single-table comparison & ranking": {
+   "SUPPORTS": 329,
+   "REFUTES": 331,
+   "NEI": 53
+  },
+  "Two-entity cross-table comparison": {
+   "REFUTES": 107,
+   "SUPPORTS": 95,
+   "NEI": 67
+  }
+ },
+ "skeleton_by_label": {
+  "CAT_ARGEXT": {
+   "REFUTES": 18,
+   "SUPPORTS": 12,
+   "NEI": 4
+  },
+  "CAT_ARGEXT_ATTR": {
+   "REFUTES": 2,
+   "SUPPORTS": 2
+  },
+  "CAT_AVG": {
+   "NEI": 9,
+   "SUPPORTS": 26,
+   "REFUTES": 39
+  },
+  "CAT_COUNT": {
+   "SUPPORTS": 14,
+   "REFUTES": 21
+  },
+  "CAT_COUNT_GT": {
+   "SUPPORTS": 28,
+   "REFUTES": 42,
+   "NEI": 8
+  },
+  "CAT_EXTVAL": {
+   "SUPPORTS": 36,
+   "NEI": 25,
+   "REFUTES": 54
+  },
+  "CAT_SUM": {
+   "SUPPORTS": 8,
+   "NEI": 1,
+   "REFUTES": 12
+  },
+  "CP_DIFF": {
+   "SUPPORTS": 28,
+   "NEI": 25,
+   "REFUTES": 42
+  },
+  "CP_DIRECTION": {
+   "SUPPORTS": 13,
+   "REFUTES": 9,
+   "NEI": 3
+  },
+  "CP_PCT": {
+   "REFUTES": 73,
+   "NEI": 43,
+   "SUPPORTS": 49
+  },
+  "JF_ARGEXT": {
+   "SUPPORTS": 3,
+   "REFUTES": 2,
+   "NEI": 1
+  },
+  "JF_AVG": {
+   "NEI": 1
+  },
+  "JF_COUNT_GT": {
+   "SUPPORTS": 7,
+   "REFUTES": 10,
+   "NEI": 4
+  },
+  "JF_EXTVAL": {
+   "NEI": 2
+  },
+  "JF_SUM": {
+   "SUPPORTS": 1,
+   "REFUTES": 1
+  },
+  "RJ_MEMBER_RANK": {
+   "REFUTES": 41,
+   "SUPPORTS": 40,
+   "NEI": 5
+  },
+  "RJ_RANK_TOP": {
+   "REFUTES": 5,
+   "SUPPORTS": 7,
+   "NEI": 19
+  },
+  "RJ_RANK_TOPVAL": {
+   "REFUTES": 9,
+   "SUPPORTS": 10
+  },
+  "ST_COMPARE": {
+   "SUPPORTS": 214,
+   "REFUTES": 163,
+   "NEI": 43
+  },
+  "ST_COUNT_GT": {
+   "SUPPORTS": 20,
+   "REFUTES": 30
+  },
+  "ST_DIFF": {
+   "SUPPORTS": 62,
+   "REFUTES": 93
+  },
+  "ST_SUPERLATIVE": {
+   "SUPPORTS": 33,
+   "REFUTES": 45,
+   "NEI": 10
+  },
+  "XT_COMPARE": {
+   "REFUTES": 29,
+   "SUPPORTS": 43,
+   "NEI": 25
+  },
+  "XT_DIFF": {
+   "REFUTES": 78,
+   "SUPPORTS": 52,
+   "NEI": 42
+  }
+ },
+ "topology": {
+  "single": 828,
+  "two_table": 689,
+  "three_plus_table": 279
+ },
+ "package_kind": {
+  "single": 713,
+  "period_pair": 285,
+  "split_pair": 269,
+  "rank_detail": 136,
+  "join_filter": 32,
+  "category_decomp": 357,
+  "category_partner": 4
+ },
+ "domain": {
+  "world_stats": 299,
+  "medals": 132,
+  "film": 32,
+  "football_intl": 29,
+  "education": 17,
+  "football": 112,
+  "basketball": 123,
+  "transport": 280,
+  "economy": 297,
+  "infrastructure": 248,
+  "demographics": 48,
+  "geography": 128,
+  "sports_other": 1,
+  "energy": 20,
+  "culture": 30
+ },
+ "domain_by_label": {
+  "basketball": {
+   "REFUTES": 69,
+   "SUPPORTS": 45,
+   "NEI": 9
+  },
+  "culture": {
+   "SUPPORTS": 18,
+   "REFUTES": 11,
+   "NEI": 1
+  },
+  "demographics": {
+   "REFUTES": 19,
+   "NEI": 9,
+   "SUPPORTS": 20
+  },
+  "economy": {
+   "SUPPORTS": 98,
+   "REFUTES": 119,
+   "NEI": 80
+  },
+  "education": {
+   "SUPPORTS": 10,
+   "REFUTES": 6,
+   "NEI": 1
+  },
+  "energy": {
+   "SUPPORTS": 7,
+   "REFUTES": 11,
+   "NEI": 2
+  },
+  "film": {
+   "SUPPORTS": 22,
+   "REFUTES": 8,
+   "NEI": 2
+  },
+  "football": {
+   "REFUTES": 46,
+   "SUPPORTS": 49,
+   "NEI": 17
+  },
+  "football_intl": {
+   "REFUTES": 20,
+   "SUPPORTS": 9
+  },
+  "geography": {
+   "REFUTES": 69,
+   "SUPPORTS": 46,
+   "NEI": 13
+  },
+  "infrastructure": {
+   "REFUTES": 122,
+   "SUPPORTS": 95,
+   "NEI": 31
+  },
+  "medals": {
+   "REFUTES": 64,
+   "SUPPORTS": 59,
+   "NEI": 9
+  },
+  "sports_other": {
+   "REFUTES": 1
+  },
+  "transport": {
+   "SUPPORTS": 109,
+   "NEI": 44,
+   "REFUTES": 127
+  },
+  "world_stats": {
+   "SUPPORTS": 121,
+   "REFUTES": 126,
+   "NEI": 52
+  }
+ },
+ "topics": 336,
+ "largest_topic": [
+  "上海地铁车站列表",
+  44
+ ],
+ "derived_tables_share": 0.318,
+ "nei_axis": {
+  "missing_table": 162,
+  "metric": 38,
+  "entity": 70
+ },
+ "refute_axis": {
+  "direction": 20,
+  "not_established": 5,
+  "number": 510,
+  "entity": 63,
+  "entity_order": 148,
+  "rank": 35,
+  "entity_or_value": 37
+ }
+}
