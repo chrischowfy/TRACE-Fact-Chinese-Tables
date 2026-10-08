@@ -93,7 +93,8 @@ def _json(raw: str | None) -> dict:
 
 
 T2S_SYSTEM = ("你用 SQLite 核查中文表格事实声明，只能依据给定的表。写一条 SELECT 查询：声明为真返回 1，为假返回 0。"
-              "如果表中没有判定所需的信息，把 abstain 设为 true。列名和表名用双引号，数值比较用 __num 列。只输出 JSON。")
+              "如果表中没有判定所需的信息，把 abstain 设为 true。列名和表名用双引号，数值比较用 __num 列。只输出 JSON。"
+              + C.ROUNDING_NOTE_ZH)
 
 
 def text2sql(claim: dict, llm) -> dict:
@@ -131,7 +132,7 @@ def _text2sql(claim, llm, conn, schema):
 
 RT_SYSTEM = ("你是表格事实核查 agent。每一步输出一个 JSON：要么 {\"thought\": ..., \"sql\": \"SELECT ...\"} 继续查询"
              "（结果会保存为可继续查询的表 stepK），要么 {\"thought\": ..., \"final_label\": \"SUPPORTS|REFUTES|NEI\"}。"
-             "SUPPORTS=表格蕴含声明，REFUTES=表格与声明矛盾，NEI=表格信息不足。只依据表格。")
+             "SUPPORTS=表格蕴含声明，REFUTES=表格与声明矛盾，NEI=表格信息不足。只依据表格。" + C.ROUNDING_NOTE_ZH)
 
 
 def reactable(claim: dict, llm, max_turns: int = 5) -> dict:

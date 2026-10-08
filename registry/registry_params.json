@@ -1,9 +1,0 @@
-{
- "min_support": 3,
- "program_sources": [
-  "tabfact",
-  "wtq",
-  "tatqa",
-  "multimodalqa"
- ]
-}

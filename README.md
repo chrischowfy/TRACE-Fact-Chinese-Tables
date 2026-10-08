@@ -1,47 +1,44 @@
 # TRACE-Fact
 
-TRACE-Fact: A Program-Grounded Benchmark with Traceable Evidence for Chinese Table Fact Verification
+Data and evaluation outputs for *TRACE-Fact: A Program-Grounded Benchmark with Traceable Evidence for Chinese Table Fact Verification*.
 
-TRACE-Fact verifies Chinese claims against Chinese Wikipedia tables. Each claim is labeled `SUPPORTS`, `REFUTES` or
-`NEI` (not enough information in the given tables). Every record includes the source tables, the executable program
-that determines the label, and the table cells that the program reads.
-
-## Statistics
+Each record is a Chinese claim, one to four Chinese Wikipedia tables and a label: `SUPPORTS`, `REFUTES` or `NEI`
+(the given tables are not enough to decide). The label is produced by an executable program stored with the record,
+together with the table cells the program reads.
 
 | | |
 |---|---|
-| Claims | 1,796 |
-| Labels | SUPPORTS 708 · REFUTES 818 · NEI 270 |
-| Multi-table inputs | 968 (53.9%) |
-| Tables per claim | 1 → 828 · 2 → 689 · 3 → 275 · 4+ → 4 |
-| Reasoning groups / skeletons | 6 / 24 |
-| Near-miss / runner-up refutations | 437 / 80 |
-| NEI with a withheld table | 162 |
-| Source pages | 316 |
-| Source | Chinese Wikipedia |
-| Data license | CC BY-SA 4.0 |
+| Claims | 2,779 |
+| Labels | SUPPORTS 1,058 · REFUTES 1,304 · NEI 417 |
+| Tables per claim | 1: 900 · 2: 1,157 · 3: 572 · 4: 150 |
+| Reasoning groups / skeletons | 14 / 45 |
+| Source | Chinese Wikipedia, 350 pages |
 
-## Data
+## Files
 
-`data/claims.jsonl` stores one record per line. A record looks like this (tables, program and evidence omitted):
+- `data/claims.jsonl`: one record per line.
+- `data/table_snapshots.jsonl`: the tables, with page and revision.
+- `data/execution_traces.jsonl`: the value of every program step.
+- `data/skeleton_registry.jsonl`: the program skeletons and the source-dataset programs that support them.
+- `data/quarantine.jsonl`, `data/repairs.jsonl`, `data/known_issues.jsonl`: removed records, records repaired
+  without a label change, and wording issues we know of.
+- `data/stats.json`: counts by label, group, skeleton, domain and topology.
+- `predictions/`: raw model outputs and run settings. `results/results.json`: scores.
+- `annotation/`: guideline, sample and judgments for the two human annotation samples.
+- `code/eval/`: prompts, agents and scoring.
+
+A record looks like this (tables, program and evidence omitted):
 
 ```json
 {"id": "r9-01033", "claim": "《八千米以上山峰列表》中，位于巴基斯坦中国的山峰死亡人数合计144人。", "label": "REFUTES"}
 ```
 
-The main fields are:
+The other fields are `tables`, `program` (skeleton, operators, slots), `evidence_cells` and `context_cells` (the
+cells the program reads), `table_topology` and `quality_flags` (skeleton card, perturbation, structural hardness).
+Ids starting with `r9-` are unchanged from the earlier 1,796-record release; `r10-` records were added.
 
-- `claim`, `label`: the Chinese statement and its three-way label.
-- `tables`: headers, rows and source (page, revision ID, URL) of each given table.
-- `program`: the reasoning skeleton, its operators and bound arguments.
-- `evidence_cells`, `context_cells`: cells read by the program, including compared competitors.
-- `table_topology`, `quality_flags`: input structure, structural hardness and per-table checks.
-
-`data/execution_traces.jsonl` gives the value produced by each program step on the given tables, for example
-`类别06 → [乔戈里峰, 加舒尔布鲁木I峰, 布洛阿特峰, 加舒尔布鲁木II峰] → [81, 29, 21, 21] → 152 → false` for the record above.
-The other files in `data/` are the table snapshots, the admitted skeleton registry, per-table necessity witnesses,
-statistics, and the lists described under Notes. `registry/` contains the skeleton induction from verified
-TabFact, WikiTableQuestions, TAT-QA and MultiModalQA programs.
+A ratio, percentage or average in a claim is written to a fixed number of decimals. Round the value computed from
+the tables half up to the same number of decimals before comparing.
 
 ## Usage
 
@@ -50,50 +47,54 @@ import json
 
 with open("data/claims.jsonl", encoding="utf-8") as f:
     claims = [json.loads(line) for line in f]
-
-print(len(claims))
-print(claims[0]["claim"], claims[0]["label"])
 ```
 
-For verification, give a model the claim and its tables and compare the predicted label with `label`. Keep the
-program and evidence fields hidden unless you run an oracle setting.
-
-## Evaluation
-
-Results of non-thinking DeepSeek models with a label-first prompt (accuracy / macro-F1; invalid outputs count as errors):
-
-| Protocol | Acc. | Macro-F1 |
-|---|---|---|
-| Full table, DeepSeek-V4-Flash | 69.4 | 70.6 |
-| Full table, DeepSeek-V4-Pro | 75.9 | 79.7 |
-| Text-to-SQL (Flash) | 82.4 | 81.4 |
-| ReAcTable-style agent (Flash) | 94.4 | 93.6 |
-| Chain-of-Table-style agent (Flash) | 46.7 | 58.5 |
-
-`predictions/` holds the raw outputs, `results/` the scores and diagnostics, `audit/` the construction-time model
-audit, and `annotation/` the human annotation materials. To score a prediction file:
+Give a model the claim and its tables and compare its answer with `label`. Keep `program` and the cell fields
+hidden unless you run an oracle setting. To score a prediction file:
 
 ```bash
 python code/eval/score.py --claims data/claims.jsonl --pred flash=predictions/deepseek-chat__full-table/predictions.jsonl
 ```
 
-The evaluation code is in `code/eval/` (full-table, claim-only and oracle prompting, text-to-SQL, ReAcTable-style and
-Chain-of-Table-style agents); the construction code is in `code/src/` and `code/tools/`.
+## Results
+
+Full tables, thinking off, label-first prompt. Invalid outputs and failed calls count as errors.
+
+| Model or protocol | Acc. | Macro-F1 |
+|---|---|---|
+| Gemini-3-Flash | 84.6 | 86.1 |
+| DeepSeek-V4-Pro | 74.1 | 78.6 |
+| GLM-5.1 | 68.4 | 74.0 |
+| DeepSeek-V4-Flash | 69.5 | 71.4 |
+| Claude-Haiku-4.5 | 63.0 | 68.2 |
+| GPT-5.4-mini | 59.9 | 64.2 |
+| Qwen3-14B | 51.9 | 53.6 |
+| Qwen3-8B | 50.3 | 49.9 |
+| Text-to-SQL (DeepSeek-V4-Flash) | 83.2 | 83.1 |
+| ReAcTable-style agent (DeepSeek-V4-Flash) | 95.3 | 95.1 |
+| Chain-of-Table-style agent (DeepSeek-V4-Flash) | 46.6 | 56.2 |
+
+Only the full-table setting was run for models other than DeepSeek. Claim-only and oracle runs are in
+`predictions/` as well.
 
 ## Notes
 
-NEI is defined relative to the given tables, not outside knowledge. Evidence cells record program dependencies
-rather than a minimal proof. Two annotators (graduate students, native speakers of Chinese) independently labeled a
-stratified sample of 300 records; on the 299 records that remain in the release they agree on 291 labels
-(Cohen's κ = 0.96). The annotation showed that one player table was an own-goal list, so the four records that used
-it as a scorer list were removed (`data/quarantine.jsonl`). Nineteen REFUTES claims write a decrease with a signed
-value (e.g. 下降了-5.4%), and one claim omits a percentage unit; their labels are correct, and they are listed in
-`data/known_issues.jsonl`. Tables are snapshots at the cited Wikipedia revisions, and source coverage is curated.
+NEI is relative to the given tables, not to outside knowledge. Evidence cells are the cells a program depends on,
+not a minimal proof.
+
+The sentence on rounding was added to the prompt on 2026-10-07. In each DeepSeek run 2,202 responses were
+requested before that date; the request time is stored with every response.
+
+Two annotators (graduate students, native speakers of Chinese) labeled two samples of 300 records. On the first
+they agree on 291 of 299 labels (Cohen's κ = 0.96). On the second, drawn
+from the added records, both give the released label on all 300; their notes and cell coordinates
+were compiled with software assistance and no time was recorded. 9 of these records were later
+removed and 25 reworded.
 
 ## License
 
-The data is released under [CC BY-SA 4.0](LICENSE); keep the Wikipedia source URLs and revision IDs when
-redistributing it. The code is released under the [MIT License](LICENSE-CODE).
+Data: [CC BY-SA 4.0](LICENSE); keep the Wikipedia URLs and revision IDs when redistributing. Code:
+[MIT](LICENSE-CODE).
 
 ## Citation
 

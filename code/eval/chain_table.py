@@ -35,7 +35,8 @@ SUPPORTS=表格支持；REFUTES=表格反驳；NEI=给定表格信息不足。�
 {"op":"derive","table":"t0","left":1,"right":2,"method":"subtract|add|ratio"}
 {"op":"join","table":"t0","other":"t1","left":0,"right":0}
 操作由环境执行，不要编造新单元格。原始表始终保留，操作生成新表。筛选造成的信息缺失不等于原表信息不足。
-聚合只覆盖给定行，不能擅自当成整个现实总体。比分、日期、区间不能当作单一数值。"""
+聚合只覆盖给定行，不能擅自当成整个现实总体。比分、日期、区间不能当作单一数值。
+""" + C.ROUNDING_NOTE_ZH
 
 
 def initial_tables(claim):

@@ -63,6 +63,16 @@ def label_definitions() -> str:
             "NEI = the given tables do not contain enough information to decide.")
 
 
+# The convention the claims are written under (and the annotation guide states): a quotient is printed to a fixed
+# number of decimals.  Stated to every protocol since 2026-10-07; ROUNDING_NOTE_ZH is the same sentence for the
+# Chinese agent prompts (sql_agents.py, chain_table.py).
+ROUNDING_NOTE = ("Numeric convention: a ratio, percentage or average stated in the claim is given to the decimal "
+                 "places written in the claim; round the value computed from the tables half up to that many "
+                 "decimal places before comparing (8.53 times is compared at two decimals, 10.4% at one).")
+ROUNDING_NOTE_ZH = ("数值约定：声明中的倍数、百分比和平均值按声明写出的小数位给出；把由表格算出的值四舍五入到同样的小数位后再比较"
+                    "（声明写 8.53 倍按两位小数比，写 10.4% 按一位小数比）。")
+
+
 def serialize_tables(tables: list[dict[str, Any]]) -> str:
     blocks = []
     for t in tables:
@@ -75,7 +85,7 @@ def serialize_tables(tables: list[dict[str, Any]]) -> str:
 def build_prompt(claim: dict[str, Any], setting: str) -> str:
     if setting not in SETTINGS:
         raise ValueError(setting)
-    parts = [label_definitions(),
+    parts = [label_definitions(), ROUNDING_NOTE,
              'Return JSON with keys "label" (one of SUPPORTS, REFUTES, NEI), "evidence_cells" (at most 3 '
              'cells as [table_id, row, column]) and "rationale" (at most 30 words).',
              f"Claim: {claim['claim']}"]

@@ -1,20 +1,113 @@
-{"id": "r9-00592", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-00597", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01160", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01161", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01164", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01169", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01170", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01181", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01182", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01199", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01200", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01208", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01209", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01215", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01219", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01223", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01224", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01226", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01493", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims"}
-{"id": "r9-01103", "issue": "the claim omits the percentage unit of the column 耕地 面积 (%); the label holds under both readings"}
+{"id": "r9-00592", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-00597", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01103", "issue": "the claim omits the percentage unit of the column 耕地 面积 (%); the label holds under both readings", "rule": "unit_omitted"}
+{"id": "r9-01160", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01161", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01164", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01169", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01170", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01181", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01182", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01199", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01200", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01208", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01209", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01215", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01219", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01223", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01224", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01226", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01493", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "r9-01666", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r9-01667", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00031", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00032", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00033", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00073", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00075", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00136", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00201", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00260", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00261", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00309", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00368", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00369", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00406", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00410", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00411", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00413", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00414", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00418", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00419", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "r10-00451", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00480", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00531", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00600", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00601", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00602", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "r10-00602", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00630", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "r10-00630", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00667", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00776", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00829", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00830", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00831", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00832", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00833", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00837", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00838", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00839", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00840", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00841", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00842", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00843", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00844", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00845", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00846", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00847", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00848", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00849", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00849", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00850", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00850", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00851", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00852", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00853", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00854", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00855", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00856", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00857", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00858", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00859", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00860", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00861", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00862", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00863", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00864", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00865", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00866", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00867", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00868", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00869", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00870", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00871", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00872", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00873", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00874", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00875", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00876", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00877", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00878", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00879", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00880", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00881", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00883", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r10-00939", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00940", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "r10-00940", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00980", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00981", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00982", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r10-00985", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "r10-00985", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}

@@ -1,57 +1,713 @@
 {
- "deepseek-v4-flash__full-table": {
-  "n": 1796,
-  "accuracy": 69.4,
-  "macro_f1": 70.6,
+ "claude-haiku-4.5__full-table": {
+  "model": "anthropic/claude-haiku-4.5",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 63.0,
+  "macro_f1": 68.2,
   "f1": {
-   "SUPPORTS": 72.0,
-   "REFUTES": 61.6,
-   "NEI": 78.1
+   "SUPPORTS": 58.7,
+   "REFUTES": 58.8,
+   "NEI": 87.1
   },
-  "invalid": 1,
+  "invalid": 28,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 578,
-    "REFUTES": 81,
-    "NEI": 48,
-    "INVALID": 1
+    "SUPPORTS": 677,
+    "REFUTES": 325,
+    "NEI": 40,
+    "INVALID": 16
    },
    "REFUTES": {
-    "SUPPORTS": 318,
-    "REFUTES": 401,
-    "NEI": 99,
-    "INVALID": 0
+    "SUPPORTS": 559,
+    "REFUTES": 684,
+    "NEI": 50,
+    "INVALID": 11
+   },
+   "NEI": {
+    "SUPPORTS": 13,
+    "REFUTES": 12,
+    "NEI": 391,
+    "INVALID": 1
+   }
+  },
+  "accuracy_ci95": [
+   61.2,
+   64.9
+  ],
+  "macro_f1_ci95": [
+   66.5,
+   69.8
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 46.6,
+    "macro_f1": 49.4
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 54.8,
+    "macro_f1": 60.2
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 67.0,
+    "macro_f1": 71.0
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 40.0,
+    "macro_f1": 23.6
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 68.8,
+    "macro_f1": 72.0
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 37.5,
+    "macro_f1": 25.9
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 68.4,
+    "macro_f1": 70.8
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 51.7,
+    "macro_f1": 52.1
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 50.0,
+    "macro_f1": 53.6
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 76.5,
+    "macro_f1": 80.7
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 70.6,
+    "macro_f1": 74.4
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 74.7,
+    "macro_f1": 77.7
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 69.0,
+    "macro_f1": 72.7
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 57.5,
+    "macro_f1": 59.5
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 76.1,
+    "macro_f1": 77.9
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 47.0,
+    "macro_f1": 33.1
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 62.9,
+    "macro_f1": 69.1
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 58.4,
+    "macro_f1": 64.5
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 72.5,
+    "macro_f1": 77.8
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 76.0,
+    "macro_f1": 77.5
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 69.6,
+    "macro_f1": 71.4
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 36.2,
+    "macro_f1": 27.1
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 58.8,
+    "macro_f1": 58.4
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 62.5,
+    "macro_f1": 63.0
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 68.1,
+    "macro_f1": 72.4
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 58.6,
+    "macro_f1": 34.4
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 61.3,
+    "macro_f1": 71.1
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 59.2,
+    "macro_f1": 64.6
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 64.4,
+    "macro_f1": 74.4
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 100.0,
+    "macro_f1": 33.3
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 66.2,
+    "macro_f1": 72.8
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 63.8,
+    "macro_f1": 67.8
+   }
+  },
+  "predictions": "predictions/anthropic_claude-haiku-4.5__full-table/predictions.jsonl"
+ },
+ "deepseek-v4-flash__chain-table": {
+  "model": "deepseek-chat",
+  "setting": "chain-table",
+  "n": 2779,
+  "accuracy": 46.6,
+  "macro_f1": 56.2,
+  "f1": {
+   "SUPPORTS": 47.7,
+   "REFUTES": 55.1,
+   "NEI": 65.7
+  },
+  "invalid": 844,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 384,
+    "REFUTES": 179,
+    "NEI": 108,
+    "INVALID": 387
+   },
+   "REFUTES": {
+    "SUPPORTS": 166,
+    "REFUTES": 564,
+    "NEI": 184,
+    "INVALID": 390
    },
    "NEI": {
     "SUPPORTS": 1,
     "REFUTES": 2,
-    "NEI": 267,
-    "INVALID": 0
+    "NEI": 347,
+    "INVALID": 67
    }
   },
-  "macro_f1_ci95": [
-   68.5,
-   72.5
-  ],
   "accuracy_ci95": [
-   67.3,
-   71.4
+   44.5,
+   48.4
+  ],
+  "macro_f1_ci95": [
+   54.2,
+   58.0
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 29.3,
+    "macro_f1": 33.5
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 45.4,
-    "macro_f1": 44.6
+    "accuracy": 50.1,
+    "macro_f1": 53.7
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 64.6,
-    "macro_f1": 65.9
+    "accuracy": 51.6,
+    "macro_f1": 63.0
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 33.3,
+    "macro_f1": 23.2
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 62.5,
-    "macro_f1": 62.1
+    "accuracy": 46.9,
+    "macro_f1": 48.2
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 75.0,
+    "macro_f1": 55.6
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 64.6,
+    "macro_f1": 75.0
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 45.0,
+    "macro_f1": 49.0
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 41.8,
+    "macro_f1": 41.9
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 53.7,
+    "macro_f1": 65.1
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 50.1,
+    "macro_f1": 61.6
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 27.9,
+    "macro_f1": 38.5
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 69.8,
+    "macro_f1": 76.6
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 52.5,
+    "macro_f1": 61.7
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 57.3,
+    "macro_f1": 67.7
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 37.5,
+    "macro_f1": 31.1
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 43.9,
+    "macro_f1": 54.6
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 42.0,
+    "macro_f1": 49.0
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 30.0,
+    "macro_f1": 51.0
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 52.0,
+    "macro_f1": 59.4
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 59.1,
+    "macro_f1": 66.6
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 20.3,
+    "macro_f1": 24.2
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 52.9,
+    "macro_f1": 55.9
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 56.2,
+    "macro_f1": 71.2
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 45.8,
+    "macro_f1": 56.9
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 31.0,
+    "macro_f1": 20.9
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 49.2,
+    "macro_f1": 57.5
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 43.6,
+    "macro_f1": 51.3
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 42.4,
+    "macro_f1": 57.7
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 100.0,
+    "macro_f1": 33.3
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 41.1,
+    "macro_f1": 51.2
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 52.9,
+    "macro_f1": 61.5
+   }
+  },
+  "predictions": "predictions/deepseek-chat__chain-table/predictions.jsonl"
+ },
+ "deepseek-v4-flash__claim-only": {
+  "model": "deepseek-chat",
+  "setting": "claim-only",
+  "n": 2779,
+  "accuracy": 15.0,
+  "macro_f1": 8.7,
+  "f1": {
+   "SUPPORTS": 0.0,
+   "REFUTES": 0.0,
+   "NEI": 26.1
+  },
+  "invalid": 0,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 0,
+    "REFUTES": 0,
+    "NEI": 1058,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 0,
+    "REFUTES": 0,
+    "NEI": 1304,
+    "INVALID": 0
+   },
+   "NEI": {
+    "SUPPORTS": 0,
+    "REFUTES": 0,
+    "NEI": 417,
+    "INVALID": 0
+   }
+  },
+  "accuracy_ci95": [
+   13.7,
+   16.3
+  ],
+  "macro_f1_ci95": [
+   8.0,
+   9.3
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 8.5,
+    "macro_f1": 5.2
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 13.0,
+    "macro_f1": 7.7
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 24.9,
+    "macro_f1": 13.3
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 25.0,
+    "macro_f1": 13.3
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 17.7,
+    "macro_f1": 10.0
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 18.3,
+    "macro_f1": 10.3
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 16.8,
+    "macro_f1": 9.6
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 17.6,
+    "macro_f1": 10.0
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 7.5,
+    "macro_f1": 4.6
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 24.9,
+    "macro_f1": 13.3
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 24.8,
+    "macro_f1": 13.3
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 25.0,
+    "macro_f1": 13.3
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 27.0,
+    "macro_f1": 14.2
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 15.0,
+    "macro_f1": 8.7
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 9.0,
+    "macro_f1": 5.5
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 12.5,
+    "macro_f1": 7.4
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 28.0,
+    "macro_f1": 14.6
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 26.1,
+    "macro_f1": 13.8
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 1.4,
+    "macro_f1": 1.0
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 11.8,
+    "macro_f1": 7.0
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 6.2,
+    "macro_f1": 3.9
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 18.1,
+    "macro_f1": 10.2
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 10.5,
+    "macro_f1": 6.3
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 14.3,
+    "macro_f1": 8.3
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 6.8,
+    "macro_f1": 4.3
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 15.8,
+    "macro_f1": 9.1
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 15.6,
+    "macro_f1": 9.0
+   }
+  },
+  "predictions": "predictions/deepseek-chat__claim-only/predictions.jsonl"
+ },
+ "deepseek-v4-flash__full-table": {
+  "model": "deepseek-chat",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 69.5,
+  "macro_f1": 71.4,
+  "f1": {
+   "SUPPORTS": 69.0,
+   "REFUTES": 65.1,
+   "NEI": 80.1
+  },
+  "invalid": 1,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 798,
+    "REFUTES": 191,
+    "NEI": 69,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 452,
+    "REFUTES": 723,
+    "NEI": 128,
+    "INVALID": 1
+   },
+   "NEI": {
+    "SUPPORTS": 5,
+    "REFUTES": 2,
+    "NEI": 410,
+    "INVALID": 0
+   }
+  },
+  "accuracy_ci95": [
+   67.7,
+   71.1
+  ],
+  "macro_f1_ci95": [
+   69.7,
+   73.1
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 48.1,
+    "macro_f1": 48.7
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 48.8,
+    "macro_f1": 48.6
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 71.9,
+    "macro_f1": 74.2
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 66.7,
+    "macro_f1": 38.3
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 65.6,
+    "macro_f1": 65.0
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 37.5,
+    "macro_f1": 35.6
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 97.5,
+    "macro_f1": 97.9
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 53.3,
+    "macro_f1": 55.2
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 57.3,
+    "macro_f1": 59.4
    },
    "Real-join rank–bridge": {
     "n": 136,
@@ -59,63 +715,73 @@
     "macro_f1": 79.9
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 81.2,
-    "macro_f1": 81.5
+    "n": 710,
+    "accuracy": 82.4,
+    "macro_f1": 82.7
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 71.7,
-    "macro_f1": 72.8
+    "accuracy": 71.4,
+    "macro_f1": 72.1
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 93.0,
+    "macro_f1": 93.2
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 67.5,
+    "macro_f1": 69.9
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 83.8,
-    "macro_f1": 85.3
+    "n": 900,
+    "accuracy": 86.1,
+    "macro_f1": 86.8
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 36.9,
-    "macro_f1": 27.3
+    "n": 722,
+    "accuracy": 51.5,
+    "macro_f1": 37.5
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 65.2,
-    "macro_f1": 67.4
+    "n": 1157,
+    "accuracy": 67.8,
+    "macro_f1": 70.8
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 70.7,
-    "macro_f1": 72.7
+    "n": 255,
+    "accuracy": 65.1,
+    "macro_f1": 64.3
    },
    "culture": {
-    "n": 30,
-    "accuracy": 96.7,
-    "macro_f1": 87.3
+    "n": 40,
+    "accuracy": 95.0,
+    "macro_f1": 93.6
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 89.6,
-    "macro_f1": 91.2
+    "n": 75,
+    "accuracy": 86.7,
+    "macro_f1": 87.4
    },
    "economy": {
-    "n": 297,
-    "accuracy": 70.4,
-    "macro_f1": 70.1
+    "n": 345,
+    "accuracy": 71.6,
+    "macro_f1": 72.2
    },
    "education": {
-    "n": 17,
-    "accuracy": 82.4,
-    "macro_f1": 60.3
+    "n": 69,
+    "accuracy": 47.8,
+    "macro_f1": 34.6
    },
    "energy": {
-    "n": 20,
-    "accuracy": 60.0,
-    "macro_f1": 59.0
+    "n": 34,
+    "accuracy": 67.6,
+    "macro_f1": 66.6
    },
    "film": {
     "n": 32,
@@ -123,9 +789,9 @@
     "macro_f1": 77.1
    },
    "football": {
-    "n": 112,
-    "accuracy": 77.7,
-    "macro_f1": 80.2
+    "n": 144,
+    "accuracy": 72.9,
+    "macro_f1": 73.9
    },
    "football_intl": {
     "n": 29,
@@ -133,19 +799,19 @@
     "macro_f1": 27.4
    },
    "geography": {
-    "n": 128,
-    "accuracy": 50.0,
-    "macro_f1": 49.8
+    "n": 191,
+    "accuracy": 59.7,
+    "macro_f1": 62.2
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 68.5,
-    "macro_f1": 70.6
+    "n": 615,
+    "accuracy": 69.9,
+    "macro_f1": 73.1
    },
    "medals": {
     "n": 132,
-    "accuracy": 73.5,
-    "macro_f1": 79.7
+    "accuracy": 75.0,
+    "macro_f1": 77.9
    },
    "sports_other": {
     "n": 1,
@@ -153,167 +819,207 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 61.4,
-    "macro_f1": 61.6
+    "n": 367,
+    "accuracy": 65.9,
+    "macro_f1": 66.7
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 74.9,
-    "macro_f1": 76.2
+    "n": 450,
+    "accuracy": 73.6,
+    "macro_f1": 75.2
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
   "predictions": "predictions/deepseek-chat__full-table/predictions.jsonl"
  },
- "deepseek-v4-pro__full-table": {
-  "n": 1796,
-  "accuracy": 75.9,
-  "macro_f1": 79.7,
+ "deepseek-v4-flash__oracle-evidence": {
+  "model": "deepseek-chat",
+  "setting": "oracle-evidence",
+  "n": 2779,
+  "accuracy": 78.7,
+  "macro_f1": 82.0,
   "f1": {
-   "SUPPORTS": 75.6,
-   "REFUTES": 69.6,
-   "NEI": 93.8
+   "SUPPORTS": 76.8,
+   "REFUTES": 74.7,
+   "NEI": 94.4
   },
-  "invalid": 6,
+  "invalid": 0,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 642,
-    "REFUTES": 56,
-    "NEI": 4,
-    "INVALID": 6
+    "SUPPORTS": 904,
+    "REFUTES": 152,
+    "NEI": 2,
+    "INVALID": 0
    },
    "REFUTES": {
-    "SUPPORTS": 338,
-    "REFUTES": 471,
-    "NEI": 9,
+    "SUPPORTS": 391,
+    "REFUTES": 869,
+    "NEI": 44,
     "INVALID": 0
    },
    "NEI": {
-    "SUPPORTS": 11,
-    "REFUTES": 9,
-    "NEI": 250,
+    "SUPPORTS": 2,
+    "REFUTES": 1,
+    "NEI": 414,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   77.9,
-   81.2
-  ],
   "accuracy_ci95": [
-   73.9,
-   77.8
+   77.1,
+   80.2
+  ],
+  "macro_f1_ci95": [
+   80.6,
+   83.3
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 63.3,
+    "macro_f1": 68.8
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 58.2,
-    "macro_f1": 64.9
+    "accuracy": 69.5,
+    "macro_f1": 75.1
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 68.1,
-    "macro_f1": 70.8
+    "accuracy": 73.7,
+    "macro_f1": 75.9
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 60.0,
+    "macro_f1": 38.0
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 71.9,
-    "macro_f1": 75.6
+    "accuracy": 78.1,
+    "macro_f1": 80.5
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 75.0,
+    "macro_f1": 48.9
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 99.4,
+    "macro_f1": 99.5
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 63.3,
+    "macro_f1": 68.5
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 68.2,
+    "macro_f1": 71.7
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 80.1,
-    "macro_f1": 82.2
+    "accuracy": 91.2,
+    "macro_f1": 92.0
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 85.1,
-    "macro_f1": 85.7
+    "n": 710,
+    "accuracy": 87.7,
+    "macro_f1": 87.9
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 81.8,
-    "macro_f1": 83.3
+    "accuracy": 76.2,
+    "macro_f1": 76.7
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 99.2,
+    "macro_f1": 99.3
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 90.0,
+    "macro_f1": 91.0
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 87.2,
-    "macro_f1": 88.7
+    "n": 900,
+    "accuracy": 90.3,
+    "macro_f1": 90.8
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 52.0,
-    "macro_f1": 35.6
+    "n": 722,
+    "accuracy": 69.0,
+    "macro_f1": 46.3
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 72.0,
-    "macro_f1": 76.7
+    "n": 1157,
+    "accuracy": 75.7,
+    "macro_f1": 79.4
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 70.7,
-    "macro_f1": 78.9
+    "n": 255,
+    "accuracy": 74.9,
+    "macro_f1": 79.8
    },
    "culture": {
-    "n": 30,
+    "n": 40,
     "accuracy": 100.0,
     "macro_f1": 100.0
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 89.6,
-    "macro_f1": 89.3
+    "n": 75,
+    "accuracy": 89.3,
+    "macro_f1": 89.9
    },
    "economy": {
-    "n": 297,
-    "accuracy": 72.7,
-    "macro_f1": 74.4
+    "n": 345,
+    "accuracy": 79.1,
+    "macro_f1": 80.7
    },
    "education": {
-    "n": 17,
-    "accuracy": 76.5,
-    "macro_f1": 53.7
+    "n": 69,
+    "accuracy": 66.7,
+    "macro_f1": 66.6
    },
    "energy": {
-    "n": 20,
-    "accuracy": 75.0,
-    "macro_f1": 82.2
+    "n": 34,
+    "accuracy": 85.3,
+    "macro_f1": 88.9
    },
    "film": {
     "n": 32,
-    "accuracy": 90.6,
-    "macro_f1": 91.1
+    "accuracy": 87.5,
+    "macro_f1": 86.1
    },
    "football": {
-    "n": 112,
-    "accuracy": 78.6,
-    "macro_f1": 82.1
+    "n": 144,
+    "accuracy": 81.2,
+    "macro_f1": 83.5
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 65.5,
-    "macro_f1": 44.2
+    "accuracy": 51.7,
+    "macro_f1": 34.7
    },
    "geography": {
-    "n": 128,
-    "accuracy": 65.6,
-    "macro_f1": 73.7
+    "n": 191,
+    "accuracy": 70.7,
+    "macro_f1": 77.5
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 77.4,
-    "macro_f1": 83.0
+    "n": 615,
+    "accuracy": 79.7,
+    "macro_f1": 82.7
    },
    "medals": {
     "n": 132,
-    "accuracy": 74.2,
-    "macro_f1": 81.0
+    "accuracy": 82.6,
+    "macro_f1": 79.5
    },
    "sports_other": {
     "n": 1,
@@ -321,167 +1027,207 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 73.6,
-    "macro_f1": 77.9
+    "n": 367,
+    "accuracy": 76.3,
+    "macro_f1": 79.1
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 80.9,
-    "macro_f1": 82.5
+    "n": 450,
+    "accuracy": 81.3,
+    "macro_f1": 84.3
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-v4-pro",
-  "predictions": "predictions/deepseek-v4-pro__full-table/predictions.jsonl"
+  "predictions": "predictions/deepseek-chat__oracle-evidence/predictions.jsonl"
  },
- "deepseek-v4-flash__text2sql": {
-  "n": 1796,
-  "accuracy": 82.4,
-  "macro_f1": 81.4,
+ "deepseek-v4-flash__oracle-program": {
+  "model": "deepseek-chat",
+  "setting": "oracle-program",
+  "n": 2779,
+  "accuracy": 74.1,
+  "macro_f1": 78.2,
   "f1": {
-   "SUPPORTS": 83.7,
-   "REFUTES": 84.7,
-   "NEI": 75.8
+   "SUPPORTS": 72.0,
+   "REFUTES": 68.4,
+   "NEI": 94.2
   },
-  "invalid": 27,
+  "invalid": 0,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 525,
-    "REFUTES": 145,
-    "NEI": 27,
-    "INVALID": 11
+    "SUPPORTS": 877,
+    "REFUTES": 167,
+    "NEI": 14,
+    "INVALID": 0
    },
    "REFUTES": {
-    "SUPPORTS": 19,
-    "REFUTES": 756,
-    "NEI": 29,
-    "INVALID": 14
+    "SUPPORTS": 502,
+    "REFUTES": 765,
+    "NEI": 37,
+    "INVALID": 0
    },
    "NEI": {
-    "SUPPORTS": 2,
-    "REFUTES": 67,
-    "NEI": 199,
-    "INVALID": 2
+    "SUPPORTS": 0,
+    "REFUTES": 0,
+    "NEI": 417,
+    "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   79.3,
-   83.3
-  ],
   "accuracy_ci95": [
-   80.6,
-   84.1
+   72.3,
+   75.6
+  ],
+  "macro_f1_ci95": [
+   76.7,
+   79.5
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 55.1,
+    "macro_f1": 59.1
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 90.3,
-    "macro_f1": 93.3
+    "accuracy": 56.8,
+    "macro_f1": 64.2
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 79.3,
-    "macro_f1": 77.9
+    "accuracy": 74.4,
+    "macro_f1": 76.1
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 40.0,
+    "macro_f1": 25.0
    },
    "Join-filter aggregation": {
     "n": 32,
     "accuracy": 84.4,
-    "macro_f1": 83.6
+    "macro_f1": 86.1
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 75.0,
+    "macro_f1": 57.1
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 93.0,
+    "macro_f1": 94.2
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 68.3,
+    "macro_f1": 73.8
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 60.9,
+    "macro_f1": 67.7
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 80.9,
-    "macro_f1": 78.4
+    "accuracy": 79.4,
+    "macro_f1": 82.2
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 87.2,
-    "macro_f1": 84.3
+    "n": 710,
+    "accuracy": 87.3,
+    "macro_f1": 88.1
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 62.8,
-    "macro_f1": 59.5
+    "accuracy": 77.0,
+    "macro_f1": 78.0
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 94.6,
+    "macro_f1": 95.2
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 75.0,
+    "macro_f1": 77.8
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 84.4,
-    "macro_f1": 83.9
+    "n": 900,
+    "accuracy": 90.0,
+    "macro_f1": 90.5
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 88.5,
-    "macro_f1": 59.8
+    "n": 722,
+    "accuracy": 58.9,
+    "macro_f1": 39.8
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 77.5,
+    "n": 1157,
+    "accuracy": 71.2,
     "macro_f1": 76.0
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 99.2,
-    "macro_f1": 99.4
+    "n": 255,
+    "accuracy": 67.5,
+    "macro_f1": 71.1
    },
    "culture": {
-    "n": 30,
-    "accuracy": 83.3,
-    "macro_f1": 70.9
+    "n": 40,
+    "accuracy": 95.0,
+    "macro_f1": 95.9
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 58.3,
-    "macro_f1": 60.3
+    "n": 75,
+    "accuracy": 88.0,
+    "macro_f1": 88.4
    },
    "economy": {
-    "n": 297,
-    "accuracy": 81.1,
-    "macro_f1": 82.1
+    "n": 345,
+    "accuracy": 79.4,
+    "macro_f1": 81.3
    },
    "education": {
-    "n": 17,
-    "accuracy": 94.1,
-    "macro_f1": 64.1
+    "n": 69,
+    "accuracy": 53.6,
+    "macro_f1": 47.4
    },
    "energy": {
-    "n": 20,
-    "accuracy": 70.0,
-    "macro_f1": 72.6
+    "n": 34,
+    "accuracy": 73.5,
+    "macro_f1": 72.7
    },
    "film": {
     "n": 32,
-    "accuracy": 75.0,
-    "macro_f1": 51.3
+    "accuracy": 87.5,
+    "macro_f1": 86.1
    },
    "football": {
-    "n": 112,
-    "accuracy": 82.1,
-    "macro_f1": 80.1
+    "n": 144,
+    "accuracy": 75.7,
+    "macro_f1": 77.7
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 89.7,
-    "macro_f1": 58.4
+    "accuracy": 51.7,
+    "macro_f1": 35.1
    },
    "geography": {
-    "n": 128,
-    "accuracy": 86.7,
-    "macro_f1": 86.5
+    "n": 191,
+    "accuracy": 63.9,
+    "macro_f1": 72.9
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 83.5,
-    "macro_f1": 80.2
+    "n": 615,
+    "accuracy": 72.4,
+    "macro_f1": 77.7
    },
    "medals": {
     "n": 132,
     "accuracy": 78.0,
-    "macro_f1": 84.1
+    "macro_f1": 75.9
    },
    "sports_other": {
     "n": 1,
@@ -489,137 +1235,177 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 82.9,
-    "macro_f1": 78.0
+    "n": 367,
+    "accuracy": 75.7,
+    "macro_f1": 79.8
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 79.6,
-    "macro_f1": 79.0
+    "n": 450,
+    "accuracy": 76.9,
+    "macro_f1": 80.2
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
-  "predictions": "predictions/deepseek-chat__text2sql/predictions.jsonl"
+  "predictions": "predictions/deepseek-chat__oracle-program/predictions.jsonl"
  },
  "deepseek-v4-flash__reactable": {
-  "n": 1796,
-  "accuracy": 94.4,
-  "macro_f1": 93.6,
+  "model": "deepseek-chat",
+  "setting": "reactable",
+  "n": 2779,
+  "accuracy": 95.3,
+  "macro_f1": 95.1,
   "f1": {
-   "SUPPORTS": 94.9,
-   "REFUTES": 95.6,
-   "NEI": 90.3
+   "SUPPORTS": 96.0,
+   "REFUTES": 96.3,
+   "NEI": 93.0
   },
-  "invalid": 3,
+  "invalid": 22,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 655,
-    "REFUTES": 25,
-    "NEI": 28,
-    "INVALID": 0
+    "SUPPORTS": 991,
+    "REFUTES": 32,
+    "NEI": 26,
+    "INVALID": 9
    },
    "REFUTES": {
-    "SUPPORTS": 16,
-    "REFUTES": 775,
-    "NEI": 24,
-    "INVALID": 3
+    "SUPPORTS": 15,
+    "REFUTES": 1242,
+    "NEI": 34,
+    "INVALID": 13
    },
    "NEI": {
-    "SUPPORTS": 1,
-    "REFUTES": 4,
-    "NEI": 265,
+    "SUPPORTS": 0,
+    "REFUTES": 2,
+    "NEI": 415,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   92.2,
-   94.8
-  ],
   "accuracy_ci95": [
-   93.3,
-   95.4
+   94.5,
+   96.1
+  ],
+  "macro_f1_ci95": [
+   94.2,
+   96.0
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 95.6,
+    "macro_f1": 94.2
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 88.9,
-    "macro_f1": 86.6
+    "accuracy": 90.0,
+    "macro_f1": 88.7
    },
    "Cross-period growth": {
     "n": 285,
     "accuracy": 99.3,
-    "macro_f1": 99.3
+    "macro_f1": 99.4
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 100.0,
+    "macro_f1": 66.7
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 81.2,
-    "macro_f1": 79.8
+    "accuracy": 84.4,
+    "macro_f1": 83.8
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 62.5,
+    "macro_f1": 40.0
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 100.0,
+    "macro_f1": 100.0
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 95.0,
+    "macro_f1": 95.1
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 96.8,
+    "macro_f1": 98.7
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 98.5,
-    "macro_f1": 98.1
+    "accuracy": 97.8,
+    "macro_f1": 97.1
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 94.0,
-    "macro_f1": 91.6
+    "n": 710,
+    "accuracy": 94.1,
+    "macro_f1": 91.2
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 97.0,
-    "macro_f1": 97.4
+    "accuracy": 98.5,
+    "macro_f1": 98.7
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 93.8,
+    "macro_f1": 94.2
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 92.5,
+    "macro_f1": 94.1
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 94.6,
-    "macro_f1": 94.5
+    "n": 900,
+    "accuracy": 95.3,
+    "macro_f1": 95.4
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 86.0,
-    "macro_f1": 59.9
+    "n": 722,
+    "accuracy": 90.9,
+    "macro_f1": 62.6
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 97.5,
-    "macro_f1": 97.1
+    "n": 1157,
+    "accuracy": 98.0,
+    "macro_f1": 97.9
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
+    "n": 255,
     "accuracy": 100.0,
     "macro_f1": 100.0
    },
    "culture": {
-    "n": 30,
-    "accuracy": 90.0,
-    "macro_f1": 76.5
+    "n": 40,
+    "accuracy": 92.5,
+    "macro_f1": 91.5
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 89.6,
-    "macro_f1": 88.5
+    "n": 75,
+    "accuracy": 90.7,
+    "macro_f1": 90.5
    },
    "economy": {
-    "n": 297,
-    "accuracy": 96.0,
-    "macro_f1": 96.1
+    "n": 345,
+    "accuracy": 97.4,
+    "macro_f1": 98.0
    },
    "education": {
-    "n": 17,
-    "accuracy": 94.1,
-    "macro_f1": 87.1
+    "n": 69,
+    "accuracy": 89.9,
+    "macro_f1": 76.3
    },
    "energy": {
-    "n": 20,
-    "accuracy": 95.0,
-    "macro_f1": 91.7
+    "n": 34,
+    "accuracy": 91.2,
+    "macro_f1": 92.8
    },
    "film": {
     "n": 32,
@@ -627,9 +1413,9 @@
     "macro_f1": 100.0
    },
    "football": {
-    "n": 112,
-    "accuracy": 95.5,
-    "macro_f1": 93.9
+    "n": 144,
+    "accuracy": 95.8,
+    "macro_f1": 95.3
    },
    "football_intl": {
     "n": 29,
@@ -637,14 +1423,14 @@
     "macro_f1": 66.7
    },
    "geography": {
-    "n": 128,
-    "accuracy": 96.1,
-    "macro_f1": 93.6
+    "n": 191,
+    "accuracy": 96.9,
+    "macro_f1": 96.3
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 87.5,
-    "macro_f1": 84.0
+    "n": 615,
+    "accuracy": 93.0,
+    "macro_f1": 92.0
    },
    "medals": {
     "n": 132,
@@ -657,167 +1443,207 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 96.8,
-    "macro_f1": 96.8
+    "n": 367,
+    "accuracy": 96.5,
+    "macro_f1": 96.0
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 97.7,
-    "macro_f1": 97.7
+    "n": 450,
+    "accuracy": 97.3,
+    "macro_f1": 97.6
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
   "predictions": "predictions/deepseek-chat__reactable/predictions.jsonl"
  },
- "deepseek-v4-flash__chain-table": {
-  "n": 1796,
-  "accuracy": 46.7,
-  "macro_f1": 58.5,
+ "deepseek-v4-flash__text2sql": {
+  "model": "deepseek-chat",
+  "setting": "text2sql",
+  "n": 2779,
+  "accuracy": 83.2,
+  "macro_f1": 83.1,
   "f1": {
-   "SUPPORTS": 51.8,
-   "REFUTES": 52.6,
-   "NEI": 70.9
+   "SUPPORTS": 82.5,
+   "REFUTES": 85.8,
+   "NEI": 81.0
   },
-  "invalid": 611,
+  "invalid": 56,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 296,
-    "REFUTES": 60,
-    "NEI": 73,
-    "INVALID": 279
+    "SUPPORTS": 766,
+    "REFUTES": 234,
+    "NEI": 33,
+    "INVALID": 25
    },
    "REFUTES": {
-    "SUPPORTS": 135,
-    "REFUTES": 314,
-    "NEI": 74,
-    "INVALID": 295
+    "SUPPORTS": 28,
+    "REFUTES": 1215,
+    "NEI": 35,
+    "INVALID": 26
    },
    "NEI": {
-    "SUPPORTS": 3,
-    "REFUTES": 1,
-    "NEI": 229,
-    "INVALID": 37
+    "SUPPORTS": 4,
+    "REFUTES": 78,
+    "NEI": 330,
+    "INVALID": 5
    }
   },
-  "macro_f1_ci95": [
-   56.1,
-   60.6
-  ],
   "accuracy_ci95": [
-   44.4,
-   48.9
+   81.9,
+   84.5
+  ],
+  "macro_f1_ci95": [
+   81.6,
+   84.6
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 71.0,
+    "macro_f1": 69.5
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 49.9,
-    "macro_f1": 53.5
+    "accuracy": 93.6,
+    "macro_f1": 95.8
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 47.7,
-    "macro_f1": 57.7
+    "accuracy": 93.3,
+    "macro_f1": 93.7
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 83.3,
+    "macro_f1": 59.0
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 53.1,
-    "macro_f1": 58.0
+    "accuracy": 81.2,
+    "macro_f1": 77.0
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 50.0,
+    "macro_f1": 22.2
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 96.2,
+    "macro_f1": 96.6
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 91.7,
+    "macro_f1": 91.6
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 63.2,
+    "macro_f1": 60.0
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 55.9,
-    "macro_f1": 65.9
+    "accuracy": 78.7,
+    "macro_f1": 75.7
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 49.2,
-    "macro_f1": 60.7
+    "n": 710,
+    "accuracy": 87.9,
+    "macro_f1": 85.6
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 29.4,
-    "macro_f1": 40.0
+    "accuracy": 65.8,
+    "macro_f1": 62.2
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 91.5,
+    "macro_f1": 93.5
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 95.0,
+    "macro_f1": 95.4
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 54.1,
-    "macro_f1": 66.2
+    "n": 900,
+    "accuracy": 85.1,
+    "macro_f1": 85.7
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 41.6,
-    "macro_f1": 33.3
+    "n": 722,
+    "accuracy": 83.7,
+    "macro_f1": 56.2
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 39.9,
-    "macro_f1": 54.1
+    "n": 1157,
+    "accuracy": 81.3,
+    "macro_f1": 80.5
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 49.6,
-    "macro_f1": 69.4
+    "n": 255,
+    "accuracy": 87.1,
+    "macro_f1": 84.5
    },
    "culture": {
-    "n": 30,
-    "accuracy": 13.3,
-    "macro_f1": 44.8
+    "n": 40,
+    "accuracy": 87.5,
+    "macro_f1": 88.3
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 56.2,
-    "macro_f1": 64.5
+    "n": 75,
+    "accuracy": 62.7,
+    "macro_f1": 65.7
    },
    "economy": {
-    "n": 297,
-    "accuracy": 58.2,
-    "macro_f1": 66.4
+    "n": 345,
+    "accuracy": 85.8,
+    "macro_f1": 86.4
    },
    "education": {
-    "n": 17,
-    "accuracy": 35.3,
-    "macro_f1": 41.3
+    "n": 69,
+    "accuracy": 62.3,
+    "macro_f1": 39.9
    },
    "energy": {
-    "n": 20,
-    "accuracy": 70.0,
-    "macro_f1": 72.4
+    "n": 34,
+    "accuracy": 67.6,
+    "macro_f1": 72.0
    },
    "film": {
     "n": 32,
-    "accuracy": 62.5,
-    "macro_f1": 73.3
+    "accuracy": 78.1,
+    "macro_f1": 53.3
    },
    "football": {
-    "n": 112,
-    "accuracy": 48.2,
-    "macro_f1": 59.3
+    "n": 144,
+    "accuracy": 81.2,
+    "macro_f1": 80.4
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 31.0,
-    "macro_f1": 22.3
+    "accuracy": 93.1,
+    "macro_f1": 60.9
    },
    "geography": {
-    "n": 128,
-    "accuracy": 50.0,
-    "macro_f1": 56.9
+    "n": 191,
+    "accuracy": 86.9,
+    "macro_f1": 88.9
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 34.3,
-    "macro_f1": 45.4
+    "n": 615,
+    "accuracy": 82.9,
+    "macro_f1": 83.0
    },
    "medals": {
     "n": 132,
-    "accuracy": 43.2,
-    "macro_f1": 57.3
+    "accuracy": 78.0,
+    "macro_f1": 84.1
    },
    "sports_other": {
     "n": 1,
@@ -825,22 +1651,22 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 38.6,
-    "macro_f1": 50.5
+    "n": 367,
+    "accuracy": 83.9,
+    "macro_f1": 81.2
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 52.2,
-    "macro_f1": 62.7
+    "n": 450,
+    "accuracy": 86.2,
+    "macro_f1": 85.7
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
-  "predictions": "predictions/deepseek-chat__chain-table/predictions.jsonl"
+  "predictions": "predictions/deepseek-chat__text2sql/predictions.jsonl"
  },
  "deepseek-v4-pro__claim-only": {
-  "n": 1796,
+  "model": "deepseek-v4-pro",
+  "setting": "claim-only",
+  "n": 2779,
   "accuracy": 15.0,
   "macro_f1": 8.7,
   "f1": {
@@ -853,31 +1679,36 @@
    "SUPPORTS": {
     "SUPPORTS": 0,
     "REFUTES": 0,
-    "NEI": 708,
+    "NEI": 1058,
     "INVALID": 0
    },
    "REFUTES": {
     "SUPPORTS": 0,
     "REFUTES": 0,
-    "NEI": 818,
+    "NEI": 1304,
     "INVALID": 0
    },
    "NEI": {
     "SUPPORTS": 0,
     "REFUTES": 0,
-    "NEI": 270,
+    "NEI": 417,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   7.9,
-   9.6
-  ],
   "accuracy_ci95": [
-   13.4,
-   16.8
+   13.7,
+   16.3
+  ],
+  "macro_f1_ci95": [
+   8.0,
+   9.3
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 8.5,
+    "macro_f1": 5.2
+   },
    "Category decomposition": {
     "n": 361,
     "accuracy": 13.0,
@@ -888,10 +1719,35 @@
     "accuracy": 24.9,
     "macro_f1": 13.3
    },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
    "Join-filter aggregation": {
     "n": 32,
     "accuracy": 25.0,
     "macro_f1": 13.3
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 17.7,
+    "macro_f1": 10.0
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 18.3,
+    "macro_f1": 10.3
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 16.8,
+    "macro_f1": 9.6
    },
    "Real-join rank–bridge": {
     "n": 136,
@@ -899,63 +1755,73 @@
     "macro_f1": 10.0
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 7.4,
+    "n": 710,
+    "accuracy": 7.5,
     "macro_f1": 4.6
    },
    "Two-entity cross-table comparison": {
     "n": 269,
     "accuracy": 24.9,
     "macro_f1": 13.3
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 24.8,
+    "macro_f1": 13.3
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 25.0,
+    "macro_f1": 13.3
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 20.3,
-    "macro_f1": 11.2
+    "n": 900,
+    "accuracy": 27.0,
+    "macro_f1": 14.2
    },
    "three_plus_table": {
-    "n": 279,
+    "n": 722,
     "accuracy": 0.0,
     "macro_f1": 0.0
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 14.8,
-    "macro_f1": 8.6
+    "n": 1157,
+    "accuracy": 15.0,
+    "macro_f1": 8.7
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 7.3,
-    "macro_f1": 4.5
+    "n": 255,
+    "accuracy": 9.0,
+    "macro_f1": 5.5
    },
    "culture": {
-    "n": 30,
-    "accuracy": 3.3,
-    "macro_f1": 2.2
+    "n": 40,
+    "accuracy": 12.5,
+    "macro_f1": 7.4
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 18.8,
-    "macro_f1": 10.5
+    "n": 75,
+    "accuracy": 28.0,
+    "macro_f1": 14.6
    },
    "economy": {
-    "n": 297,
-    "accuracy": 26.9,
-    "macro_f1": 14.1
+    "n": 345,
+    "accuracy": 26.1,
+    "macro_f1": 13.8
    },
    "education": {
-    "n": 17,
-    "accuracy": 5.9,
-    "macro_f1": 3.7
+    "n": 69,
+    "accuracy": 1.4,
+    "macro_f1": 1.0
    },
    "energy": {
-    "n": 20,
-    "accuracy": 10.0,
-    "macro_f1": 6.1
+    "n": 34,
+    "accuracy": 11.8,
+    "macro_f1": 7.0
    },
    "film": {
     "n": 32,
@@ -963,9 +1829,9 @@
     "macro_f1": 3.9
    },
    "football": {
-    "n": 112,
-    "accuracy": 15.2,
-    "macro_f1": 8.8
+    "n": 144,
+    "accuracy": 18.1,
+    "macro_f1": 10.2
    },
    "football_intl": {
     "n": 29,
@@ -973,14 +1839,14 @@
     "macro_f1": 0.0
    },
    "geography": {
-    "n": 128,
-    "accuracy": 10.2,
-    "macro_f1": 6.1
+    "n": 191,
+    "accuracy": 10.5,
+    "macro_f1": 6.3
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 12.5,
-    "macro_f1": 7.4
+    "n": 615,
+    "accuracy": 14.3,
+    "macro_f1": 8.3
    },
    "medals": {
     "n": 132,
@@ -993,305 +1859,177 @@
     "macro_f1": 0.0
    },
    "transport": {
-    "n": 280,
-    "accuracy": 15.7,
+    "n": 367,
+    "accuracy": 15.8,
     "macro_f1": 9.1
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 17.4,
-    "macro_f1": 9.9
+    "n": 450,
+    "accuracy": 15.6,
+    "macro_f1": 9.0
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-v4-pro",
   "predictions": "predictions/deepseek-v4-pro__claim-only/predictions.jsonl"
  },
- "deepseek-v4-pro__oracle-evidence": {
-  "n": 1796,
-  "accuracy": 81.1,
-  "macro_f1": 84.7,
+ "deepseek-v4-pro__full-table": {
+  "model": "deepseek-v4-pro",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 74.1,
+  "macro_f1": 78.6,
   "f1": {
-   "SUPPORTS": 79.7,
-   "REFUTES": 76.5,
-   "NEI": 97.9
+   "SUPPORTS": 70.7,
+   "REFUTES": 71.3,
+   "NEI": 93.8
   },
-  "invalid": 0,
+  "invalid": 14,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 652,
-    "REFUTES": 56,
-    "NEI": 0,
-    "INVALID": 0
+    "SUPPORTS": 830,
+    "REFUTES": 212,
+    "NEI": 3,
+    "INVALID": 13
    },
    "REFUTES": {
-    "SUPPORTS": 272,
-    "REFUTES": 546,
-    "NEI": 0,
-    "INVALID": 0
+    "SUPPORTS": 443,
+    "REFUTES": 851,
+    "NEI": 9,
+    "INVALID": 1
    },
    "NEI": {
-    "SUPPORTS": 4,
-    "REFUTES": 7,
-    "NEI": 259,
+    "SUPPORTS": 18,
+    "REFUTES": 20,
+    "NEI": 379,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   83.3,
-   86.2
-  ],
   "accuracy_ci95": [
-   79.3,
-   83.0
+   72.4,
+   75.7
+  ],
+  "macro_f1_ci95": [
+   77.1,
+   80.0
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 61.3,
+    "macro_f1": 65.7
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 73.7,
-    "macro_f1": 79.5
+    "accuracy": 58.7,
+    "macro_f1": 67.1
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 69.8,
-    "macro_f1": 72.8
+    "accuracy": 67.4,
+    "macro_f1": 70.6
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 50.0,
+    "macro_f1": 30.0
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 78.1,
-    "macro_f1": 80.5
-   },
-   "Real-join rank–bridge": {
-    "n": 136,
-    "accuracy": 95.6,
-    "macro_f1": 94.6
-   },
-   "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 87.0,
-    "macro_f1": 89.7
-   },
-   "Two-entity cross-table comparison": {
-    "n": 269,
-    "accuracy": 80.7,
-    "macro_f1": 82.3
-   }
-  },
-  "by_topology": {
-   "single": {
-    "n": 828,
-    "accuracy": 88.8,
-    "macro_f1": 90.4
-   },
-   "three_plus_table": {
-    "n": 279,
-    "accuracy": 71.3,
-    "macro_f1": 47.4
-   },
-   "two_table": {
-    "n": 689,
-    "accuracy": 75.9,
-    "macro_f1": 80.1
-   }
-  },
-  "by_domain": {
-   "basketball": {
-    "n": 123,
-    "accuracy": 82.1,
-    "macro_f1": 87.1
-   },
-   "culture": {
-    "n": 30,
-    "accuracy": 100.0,
-    "macro_f1": 100.0
-   },
-   "demographics": {
-    "n": 48,
-    "accuracy": 93.8,
-    "macro_f1": 94.8
-   },
-   "economy": {
-    "n": 297,
-    "accuracy": 81.8,
-    "macro_f1": 83.3
-   },
-   "education": {
-    "n": 17,
-    "accuracy": 94.1,
-    "macro_f1": 95.7
-   },
-   "energy": {
-    "n": 20,
-    "accuracy": 90.0,
-    "macro_f1": 92.5
-   },
-   "film": {
-    "n": 32,
-    "accuracy": 90.6,
-    "macro_f1": 90.2
-   },
-   "football": {
-    "n": 112,
-    "accuracy": 83.0,
-    "macro_f1": 83.6
-   },
-   "football_intl": {
-    "n": 29,
-    "accuracy": 48.3,
-    "macro_f1": 31.5
-   },
-   "geography": {
-    "n": 128,
-    "accuracy": 74.2,
-    "macro_f1": 80.8
-   },
-   "infrastructure": {
-    "n": 248,
-    "accuracy": 82.3,
-    "macro_f1": 86.5
-   },
-   "medals": {
-    "n": 132,
-    "accuracy": 75.8,
-    "macro_f1": 82.1
-   },
-   "sports_other": {
-    "n": 1,
-    "accuracy": 100.0,
-    "macro_f1": 33.3
-   },
-   "transport": {
-    "n": 280,
-    "accuracy": 76.8,
-    "macro_f1": 80.8
-   },
-   "world_stats": {
-    "n": 299,
-    "accuracy": 84.6,
-    "macro_f1": 87.2
-   }
-  },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-v4-pro",
-  "predictions": "predictions/deepseek-v4-pro__oracle-evidence/predictions.jsonl"
- },
- "deepseek-v4-pro__oracle-program": {
-  "n": 1796,
-  "accuracy": 78.5,
-  "macro_f1": 82.3,
-  "f1": {
-   "SUPPORTS": 77.8,
-   "REFUTES": 72.1,
-   "NEI": 97.2
-  },
-  "invalid": 0,
-  "confusion": {
-   "SUPPORTS": {
-    "SUPPORTS": 657,
-    "REFUTES": 50,
-    "NEI": 1,
-    "INVALID": 0
-   },
-   "REFUTES": {
-    "SUPPORTS": 322,
-    "REFUTES": 494,
-    "NEI": 2,
-    "INVALID": 0
-   },
-   "NEI": {
-    "SUPPORTS": 3,
-    "REFUTES": 9,
-    "NEI": 258,
-    "INVALID": 0
-   }
-  },
-  "macro_f1_ci95": [
-   80.8,
-   83.9
-  ],
-  "accuracy_ci95": [
-   76.6,
-   80.2
-  ],
-  "by_group": {
-   "Category decomposition": {
-    "n": 361,
-    "accuracy": 59.8,
-    "macro_f1": 68.9
-   },
-   "Cross-period growth": {
-    "n": 285,
-    "accuracy": 74.0,
-    "macro_f1": 76.5
-   },
-   "Join-filter aggregation": {
-    "n": 32,
-    "accuracy": 78.1,
-    "macro_f1": 80.1
-   },
-   "Real-join rank–bridge": {
-    "n": 136,
-    "accuracy": 76.5,
-    "macro_f1": 79.0
-   },
-   "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 89.3,
-    "macro_f1": 91.5
-   },
-   "Two-entity cross-table comparison": {
-    "n": 269,
-    "accuracy": 80.3,
-    "macro_f1": 81.8
-   }
-  },
-  "by_topology": {
-   "single": {
-    "n": 828,
-    "accuracy": 90.2,
-    "macro_f1": 91.4
-   },
-   "three_plus_table": {
-    "n": 279,
-    "accuracy": 52.7,
-    "macro_f1": 34.8
-   },
-   "two_table": {
-    "n": 689,
-    "accuracy": 74.7,
-    "macro_f1": 79.2
-   }
-  },
-  "by_domain": {
-   "basketball": {
-    "n": 123,
-    "accuracy": 74.0,
-    "macro_f1": 75.7
-   },
-   "culture": {
-    "n": 30,
-    "accuracy": 100.0,
-    "macro_f1": 100.0
-   },
-   "demographics": {
-    "n": 48,
-    "accuracy": 91.7,
-    "macro_f1": 93.0
-   },
-   "economy": {
-    "n": 297,
-    "accuracy": 81.5,
-    "macro_f1": 82.9
-   },
-   "education": {
-    "n": 17,
-    "accuracy": 100.0,
-    "macro_f1": 100.0
-   },
-   "energy": {
-    "n": 20,
     "accuracy": 75.0,
-    "macro_f1": 81.0
+    "macro_f1": 77.6
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 75.0,
+    "macro_f1": 48.9
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 93.7,
+    "macro_f1": 94.0
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 58.3,
+    "macro_f1": 64.4
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 63.2,
+    "macro_f1": 64.8
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 79.4,
+    "macro_f1": 81.8
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 86.1,
+    "macro_f1": 86.7
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 81.0,
+    "macro_f1": 82.4
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 87.6,
+    "macro_f1": 87.3
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 75.0,
+    "macro_f1": 77.8
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 88.0,
+    "macro_f1": 88.7
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 60.9,
+    "macro_f1": 40.8
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 71.6,
+    "macro_f1": 76.7
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 66.7,
+    "macro_f1": 74.3
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 100.0,
+    "macro_f1": 100.0
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 89.3,
+    "macro_f1": 89.9
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 74.2,
+    "macro_f1": 76.2
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 59.4,
+    "macro_f1": 36.0
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 70.6,
+    "macro_f1": 78.1
    },
    "film": {
     "n": 32,
@@ -1299,29 +2037,29 @@
     "macro_f1": 94.3
    },
    "football": {
-    "n": 112,
-    "accuracy": 76.8,
-    "macro_f1": 79.1
+    "n": 144,
+    "accuracy": 73.6,
+    "macro_f1": 77.0
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 55.2,
-    "macro_f1": 36.6
+    "accuracy": 58.6,
+    "macro_f1": 39.0
    },
    "geography": {
-    "n": 128,
-    "accuracy": 64.1,
-    "macro_f1": 71.3
+    "n": 191,
+    "accuracy": 64.9,
+    "macro_f1": 72.8
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 77.8,
-    "macro_f1": 82.2
+    "n": 615,
+    "accuracy": 76.3,
+    "macro_f1": 80.7
    },
    "medals": {
     "n": 132,
-    "accuracy": 78.0,
-    "macro_f1": 83.8
+    "accuracy": 75.8,
+    "macro_f1": 80.6
    },
    "sports_other": {
     "n": 1,
@@ -1329,334 +2067,622 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 74.6,
-    "macro_f1": 78.7
+    "n": 367,
+    "accuracy": 73.6,
+    "macro_f1": 77.6
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 83.6,
-    "macro_f1": 86.7
+    "n": 450,
+    "accuracy": 76.7,
+    "macro_f1": 80.1
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-v4-pro",
-  "predictions": "predictions/deepseek-v4-pro__oracle-program/predictions.jsonl"
+  "predictions": "predictions/deepseek-v4-pro__full-table/predictions.jsonl"
  },
- "deepseek-v4-flash__claim-only": {
-  "n": 1796,
-  "accuracy": 15.0,
-  "macro_f1": 8.7,
+ "deepseek-v4-pro__oracle-evidence": {
+  "model": "deepseek-v4-pro",
+  "setting": "oracle-evidence",
+  "n": 2779,
+  "accuracy": 80.9,
+  "macro_f1": 84.6,
   "f1": {
-   "SUPPORTS": 0.0,
-   "REFUTES": 0.0,
-   "NEI": 26.1
+   "SUPPORTS": 76.9,
+   "REFUTES": 79.1,
+   "NEI": 97.8
   },
-  "invalid": 0,
+  "invalid": 8,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 0,
-    "REFUTES": 0,
-    "NEI": 708,
-    "INVALID": 0
+    "SUPPORTS": 866,
+    "REFUTES": 184,
+    "NEI": 0,
+    "INVALID": 8
    },
    "REFUTES": {
-    "SUPPORTS": 0,
-    "REFUTES": 0,
-    "NEI": 818,
+    "SUPPORTS": 322,
+    "REFUTES": 982,
+    "NEI": 0,
     "INVALID": 0
    },
    "NEI": {
-    "SUPPORTS": 0,
-    "REFUTES": 0,
-    "NEI": 270,
+    "SUPPORTS": 6,
+    "REFUTES": 12,
+    "NEI": 399,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   7.9,
-   9.6
-  ],
   "accuracy_ci95": [
-   13.4,
-   16.8
+   79.4,
+   82.3
+  ],
+  "macro_f1_ci95": [
+   83.4,
+   85.7
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 76.0,
+    "macro_f1": 81.6
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 13.0,
-    "macro_f1": 7.7
+    "accuracy": 72.3,
+    "macro_f1": 78.5
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 24.9,
-    "macro_f1": 13.3
+    "accuracy": 70.5,
+    "macro_f1": 73.8
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 53.3,
+    "macro_f1": 31.7
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 25.0,
-    "macro_f1": 13.3
+    "accuracy": 75.0,
+    "macro_f1": 78.6
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 62.5,
+    "macro_f1": 37.6
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 98.1,
+    "macro_f1": 97.5
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 66.7,
+    "macro_f1": 66.7
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 70.9,
+    "macro_f1": 72.5
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 17.6,
-    "macro_f1": 10.0
+    "accuracy": 95.6,
+    "macro_f1": 94.6
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 7.4,
-    "macro_f1": 4.6
+    "n": 710,
+    "accuracy": 87.2,
+    "macro_f1": 90.2
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 24.9,
-    "macro_f1": 13.3
+    "accuracy": 82.2,
+    "macro_f1": 83.7
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 93.8,
+    "macro_f1": 94.1
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 97.5,
+    "macro_f1": 97.6
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 20.3,
-    "macro_f1": 11.2
+    "n": 900,
+    "accuracy": 89.4,
+    "macro_f1": 90.3
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 0.0,
-    "macro_f1": 0.0
+    "n": 722,
+    "accuracy": 75.6,
+    "macro_f1": 49.8
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 14.8,
-    "macro_f1": 8.6
+    "n": 1157,
+    "accuracy": 77.4,
+    "macro_f1": 81.7
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 7.3,
-    "macro_f1": 4.5
+    "n": 255,
+    "accuracy": 77.6,
+    "macro_f1": 83.2
    },
    "culture": {
-    "n": 30,
-    "accuracy": 3.3,
-    "macro_f1": 2.2
+    "n": 40,
+    "accuracy": 100.0,
+    "macro_f1": 100.0
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 18.8,
-    "macro_f1": 10.5
+    "n": 75,
+    "accuracy": 89.3,
+    "macro_f1": 90.5
    },
    "economy": {
-    "n": 297,
-    "accuracy": 26.9,
-    "macro_f1": 14.1
+    "n": 345,
+    "accuracy": 82.3,
+    "macro_f1": 84.1
    },
    "education": {
-    "n": 17,
-    "accuracy": 5.9,
-    "macro_f1": 3.7
+    "n": 69,
+    "accuracy": 73.9,
+    "macro_f1": 80.7
    },
    "energy": {
-    "n": 20,
-    "accuracy": 10.0,
-    "macro_f1": 6.1
+    "n": 34,
+    "accuracy": 85.3,
+    "macro_f1": 88.8
    },
    "film": {
     "n": 32,
-    "accuracy": 6.2,
-    "macro_f1": 3.9
+    "accuracy": 93.8,
+    "macro_f1": 93.8
    },
    "football": {
-    "n": 112,
-    "accuracy": 15.2,
-    "macro_f1": 8.8
+    "n": 144,
+    "accuracy": 84.0,
+    "macro_f1": 85.3
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 0.0,
-    "macro_f1": 0.0
+    "accuracy": 55.2,
+    "macro_f1": 36.6
    },
    "geography": {
-    "n": 128,
-    "accuracy": 10.2,
-    "macro_f1": 6.1
+    "n": 191,
+    "accuracy": 77.5,
+    "macro_f1": 83.0
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 12.5,
-    "macro_f1": 7.4
+    "n": 615,
+    "accuracy": 83.6,
+    "macro_f1": 86.9
    },
    "medals": {
     "n": 132,
-    "accuracy": 6.8,
-    "macro_f1": 4.3
+    "accuracy": 72.7,
+    "macro_f1": 80.1
    },
    "sports_other": {
     "n": 1,
-    "accuracy": 0.0,
-    "macro_f1": 0.0
+    "accuracy": 100.0,
+    "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 15.7,
-    "macro_f1": 9.1
+    "n": 367,
+    "accuracy": 79.3,
+    "macro_f1": 83.0
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 17.4,
-    "macro_f1": 9.9
+    "n": 450,
+    "accuracy": 80.2,
+    "macro_f1": 83.8
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
-  "predictions": "predictions/deepseek-chat__claim-only/predictions.jsonl"
+  "predictions": "predictions/deepseek-v4-pro__oracle-evidence/predictions.jsonl"
  },
- "deepseek-v4-flash__oracle-evidence": {
-  "n": 1796,
-  "accuracy": 79.4,
-  "macro_f1": 81.8,
+ "deepseek-v4-pro__oracle-program": {
+  "model": "deepseek-v4-pro",
+  "setting": "oracle-program",
+  "n": 2779,
+  "accuracy": 76.0,
+  "macro_f1": 80.5,
   "f1": {
-   "SUPPORTS": 79.9,
-   "REFUTES": 73.5,
-   "NEI": 91.9
+   "SUPPORTS": 72.9,
+   "REFUTES": 72.1,
+   "NEI": 96.5
   },
-  "invalid": 0,
+  "invalid": 5,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 652,
-    "REFUTES": 51,
-    "NEI": 5,
-    "INVALID": 0
+    "SUPPORTS": 867,
+    "REFUTES": 186,
+    "NEI": 0,
+    "INVALID": 5
    },
    "REFUTES": {
-    "SUPPORTS": 272,
-    "REFUTES": 506,
-    "NEI": 40,
+    "SUPPORTS": 449,
+    "REFUTES": 853,
+    "NEI": 2,
     "INVALID": 0
    },
    "NEI": {
-    "SUPPORTS": 1,
-    "REFUTES": 1,
-    "NEI": 268,
+    "SUPPORTS": 4,
+    "REFUTES": 22,
+    "NEI": 391,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   80.1,
-   83.4
-  ],
   "accuracy_ci95": [
-   77.5,
-   81.1
+   74.3,
+   77.4
+  ],
+  "macro_f1_ci95": [
+   79.1,
+   81.8
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 59.5,
+    "macro_f1": 67.7
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 71.2,
-    "macro_f1": 75.0
+    "accuracy": 60.4,
+    "macro_f1": 69.3
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 68.4,
-    "macro_f1": 70.2
+    "accuracy": 74.4,
+    "macro_f1": 77.1
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 66.7,
+    "macro_f1": 44.2
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 71.9,
-    "macro_f1": 74.6
+    "accuracy": 84.4,
+    "macro_f1": 85.6
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 62.5,
+    "macro_f1": 37.6
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 93.7,
+    "macro_f1": 93.8
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 60.0,
+    "macro_f1": 67.0
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 63.2,
+    "macro_f1": 68.7
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 94.1,
-    "macro_f1": 94.8
+    "accuracy": 76.5,
+    "macro_f1": 78.6
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 87.1,
-    "macro_f1": 87.2
+    "n": 710,
+    "accuracy": 89.9,
+    "macro_f1": 91.8
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 75.1,
-    "macro_f1": 75.2
+    "accuracy": 79.2,
+    "macro_f1": 80.7
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 89.1,
+    "macro_f1": 89.2
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 82.5,
+    "macro_f1": 84.3
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 88.9,
-    "macro_f1": 89.8
+    "n": 900,
+    "accuracy": 90.7,
+    "macro_f1": 91.2
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 68.1,
-    "macro_f1": 46.3
+    "n": 722,
+    "accuracy": 60.4,
+    "macro_f1": 40.2
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 72.6,
-    "macro_f1": 75.6
+    "n": 1157,
+    "accuracy": 74.2,
+    "macro_f1": 79.1
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 82.9,
-    "macro_f1": 83.7
+    "n": 255,
+    "accuracy": 71.4,
+    "macro_f1": 77.3
    },
    "culture": {
-    "n": 30,
-    "accuracy": 96.7,
-    "macro_f1": 97.5
+    "n": 40,
+    "accuracy": 97.5,
+    "macro_f1": 98.0
    },
    "demographics": {
-    "n": 48,
-    "accuracy": 89.6,
-    "macro_f1": 91.2
+    "n": 75,
+    "accuracy": 88.0,
+    "macro_f1": 88.5
    },
    "economy": {
-    "n": 297,
-    "accuracy": 79.1,
-    "macro_f1": 80.1
+    "n": 345,
+    "accuracy": 83.5,
+    "macro_f1": 85.0
    },
    "education": {
-    "n": 17,
-    "accuracy": 94.1,
-    "macro_f1": 95.7
+    "n": 69,
+    "accuracy": 56.5,
+    "macro_f1": 68.6
    },
    "energy": {
-    "n": 20,
-    "accuracy": 75.0,
-    "macro_f1": 81.4
+    "n": 34,
+    "accuracy": 73.5,
+    "macro_f1": 79.4
    },
    "film": {
     "n": 32,
-    "accuracy": 87.5,
-    "macro_f1": 86.1
+    "accuracy": 90.6,
+    "macro_f1": 81.5
    },
    "football": {
-    "n": 112,
-    "accuracy": 84.8,
-    "macro_f1": 85.9
+    "n": 144,
+    "accuracy": 75.0,
+    "macro_f1": 78.8
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 44.8,
-    "macro_f1": 29.9
+    "accuracy": 55.2,
+    "macro_f1": 36.6
    },
    "geography": {
-    "n": 128,
-    "accuracy": 72.7,
-    "macro_f1": 78.7
+    "n": 191,
+    "accuracy": 64.4,
+    "macro_f1": 71.6
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 78.2,
-    "macro_f1": 80.5
+    "n": 615,
+    "accuracy": 75.9,
+    "macro_f1": 80.9
    },
    "medals": {
     "n": 132,
-    "accuracy": 84.1,
+    "accuracy": 75.8,
+    "macro_f1": 81.9
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 100.0,
+    "macro_f1": 33.3
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 74.7,
+    "macro_f1": 78.7
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 78.7,
+    "macro_f1": 82.6
+   }
+  },
+  "predictions": "predictions/deepseek-v4-pro__oracle-program/predictions.jsonl"
+ },
+ "glm-5.1__full-table": {
+  "model": "glm-5.1",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 68.4,
+  "macro_f1": 74.0,
+  "f1": {
+   "SUPPORTS": 64.0,
+   "REFUTES": 64.9,
+   "NEI": 93.2
+  },
+  "invalid": 12,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 736,
+    "REFUTES": 316,
+    "NEI": 3,
+    "INVALID": 3
+   },
+   "REFUTES": {
+    "SUPPORTS": 499,
+    "REFUTES": 797,
+    "NEI": 2,
+    "INVALID": 6
+   },
+   "NEI": {
+    "SUPPORTS": 8,
+    "REFUTES": 38,
+    "NEI": 368,
+    "INVALID": 3
+   }
+  },
+  "accuracy_ci95": [
+   66.6,
+   70.1
+  ],
+  "macro_f1_ci95": [
+   72.5,
+   75.5
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 54.0,
+    "macro_f1": 64.7
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 60.9,
+    "macro_f1": 69.8
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 69.8,
+    "macro_f1": 72.0
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 40.0,
+    "macro_f1": 25.0
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 56.2,
+    "macro_f1": 53.4
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 50.0,
+    "macro_f1": 33.3
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 89.2,
+    "macro_f1": 91.2
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 53.3,
+    "macro_f1": 61.5
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 51.4,
+    "macro_f1": 59.8
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 85.3,
+    "macro_f1": 85.6
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 79.4,
+    "macro_f1": 83.0
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 61.7,
+    "macro_f1": 64.4
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 82.2,
+    "macro_f1": 83.6
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 65.0,
+    "macro_f1": 67.6
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 81.2,
+    "macro_f1": 82.6
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 54.4,
+    "macro_f1": 36.3
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 67.2,
+    "macro_f1": 73.3
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 67.5,
+    "macro_f1": 74.4
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 92.5,
+    "macro_f1": 94.1
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 74.7,
+    "macro_f1": 76.1
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 73.0,
+    "macro_f1": 75.3
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 49.3,
+    "macro_f1": 33.3
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 70.6,
+    "macro_f1": 70.5
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 75.0,
+    "macro_f1": 69.3
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 73.6,
+    "macro_f1": 78.7
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 27.6,
+    "macro_f1": 18.2
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 62.3,
+    "macro_f1": 70.3
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 67.6,
+    "macro_f1": 74.0
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 72.7,
     "macro_f1": 80.7
    },
    "sports_other": {
@@ -1665,167 +2691,207 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 75.4,
-    "macro_f1": 78.0
+    "n": 367,
+    "accuracy": 65.4,
+    "macro_f1": 70.1
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 80.3,
-    "macro_f1": 82.7
+    "n": 450,
+    "accuracy": 70.2,
+    "macro_f1": 75.7
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
-  "predictions": "predictions/deepseek-chat__oracle-evidence/predictions.jsonl"
+  "predictions": "predictions/glm-5.1__full-table/predictions.jsonl"
  },
- "deepseek-v4-flash__oracle-program": {
-  "n": 1796,
-  "accuracy": 77.1,
-  "macro_f1": 79.8,
+ "gemini-3-flash__full-table": {
+  "model": "google/gemini-3-flash-preview",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 84.6,
+  "macro_f1": 86.1,
   "f1": {
-   "SUPPORTS": 77.6,
-   "REFUTES": 69.8,
-   "NEI": 92.0
+   "SUPPORTS": 84.9,
+   "REFUTES": 81.8,
+   "NEI": 91.5
   },
-  "invalid": 0,
+  "invalid": 2,
   "confusion": {
    "SUPPORTS": {
-    "SUPPORTS": 646,
-    "REFUTES": 55,
-    "NEI": 7,
+    "SUPPORTS": 1037,
+    "REFUTES": 20,
+    "NEI": 1,
     "INVALID": 0
    },
    "REFUTES": {
-    "SUPPORTS": 310,
-    "REFUTES": 468,
-    "NEI": 40,
-    "INVALID": 0
+    "SUPPORTS": 333,
+    "REFUTES": 925,
+    "NEI": 44,
+    "INVALID": 2
    },
    "NEI": {
-    "SUPPORTS": 0,
-    "REFUTES": 0,
-    "NEI": 270,
+    "SUPPORTS": 15,
+    "REFUTES": 12,
+    "NEI": 390,
     "INVALID": 0
    }
   },
-  "macro_f1_ci95": [
-   78.2,
-   81.4
-  ],
   "accuracy_ci95": [
-   75.3,
-   78.8
+   83.1,
+   85.9
+  ],
+  "macro_f1_ci95": [
+   84.7,
+   87.2
   ],
   "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 69.8,
+    "macro_f1": 68.6
+   },
    "Category decomposition": {
     "n": 361,
-    "accuracy": 56.5,
-    "macro_f1": 63.0
+    "accuracy": 82.0,
+    "macro_f1": 85.9
    },
    "Cross-period growth": {
     "n": 285,
-    "accuracy": 77.2,
-    "macro_f1": 78.4
+    "accuracy": 81.4,
+    "macro_f1": 83.1
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 43.3,
+    "macro_f1": 23.0
    },
    "Join-filter aggregation": {
     "n": 32,
-    "accuracy": 87.5,
-    "macro_f1": 88.1
+    "accuracy": 59.4,
+    "macro_f1": 60.7
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 75.0,
+    "macro_f1": 48.9
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 96.8,
+    "macro_f1": 96.5
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 55.0,
+    "macro_f1": 63.2
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 73.2,
+    "macro_f1": 74.5
    },
    "Real-join rank–bridge": {
     "n": 136,
-    "accuracy": 78.7,
-    "macro_f1": 81.5
+    "accuracy": 98.5,
+    "macro_f1": 98.4
    },
    "Single-table comparison & ranking": {
-    "n": 713,
-    "accuracy": 87.2,
-    "macro_f1": 87.8
+    "n": 710,
+    "accuracy": 93.8,
+    "macro_f1": 93.5
    },
    "Two-entity cross-table comparison": {
     "n": 269,
-    "accuracy": 75.5,
-    "macro_f1": 75.8
+    "accuracy": 87.0,
+    "macro_f1": 87.2
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 98.4,
+    "macro_f1": 98.6
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 100.0,
+    "macro_f1": 100.0
    }
   },
   "by_topology": {
    "single": {
-    "n": 828,
-    "accuracy": 89.0,
-    "macro_f1": 90.1
+    "n": 900,
+    "accuracy": 93.3,
+    "macro_f1": 93.5
    },
    "three_plus_table": {
-    "n": 279,
-    "accuracy": 48.4,
-    "macro_f1": 32.1
+    "n": 722,
+    "accuracy": 77.6,
+    "macro_f1": 52.2
    },
    "two_table": {
-    "n": 689,
-    "accuracy": 74.3,
-    "macro_f1": 77.1
+    "n": 1157,
+    "accuracy": 82.3,
+    "macro_f1": 84.0
    }
   },
   "by_domain": {
    "basketball": {
-    "n": 123,
-    "accuracy": 72.4,
-    "macro_f1": 73.7
+    "n": 255,
+    "accuracy": 79.6,
+    "macro_f1": 81.9
    },
    "culture": {
-    "n": 30,
-    "accuracy": 96.7,
-    "macro_f1": 87.3
-   },
-   "demographics": {
-    "n": 48,
-    "accuracy": 89.6,
-    "macro_f1": 91.4
-   },
-   "economy": {
-    "n": 297,
-    "accuracy": 80.1,
-    "macro_f1": 81.3
-   },
-   "education": {
-    "n": 17,
+    "n": 40,
     "accuracy": 100.0,
     "macro_f1": 100.0
    },
+   "demographics": {
+    "n": 75,
+    "accuracy": 93.3,
+    "macro_f1": 93.6
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 85.2,
+    "macro_f1": 86.1
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 91.3,
+    "macro_f1": 83.4
+   },
    "energy": {
-    "n": 20,
-    "accuracy": 80.0,
-    "macro_f1": 84.4
+    "n": 34,
+    "accuracy": 79.4,
+    "macro_f1": 78.3
    },
    "film": {
     "n": 32,
-    "accuracy": 90.6,
-    "macro_f1": 90.2
+    "accuracy": 93.8,
+    "macro_f1": 87.8
    },
    "football": {
-    "n": 112,
-    "accuracy": 79.5,
-    "macro_f1": 81.5
+    "n": 144,
+    "accuracy": 88.9,
+    "macro_f1": 90.6
    },
    "football_intl": {
     "n": 29,
-    "accuracy": 48.3,
-    "macro_f1": 32.7
+    "accuracy": 96.6,
+    "macro_f1": 64.1
    },
    "geography": {
-    "n": 128,
-    "accuracy": 63.3,
-    "macro_f1": 72.1
+    "n": 191,
+    "accuracy": 85.3,
+    "macro_f1": 88.4
    },
    "infrastructure": {
-    "n": 248,
-    "accuracy": 73.4,
-    "macro_f1": 77.3
+    "n": 615,
+    "accuracy": 81.5,
+    "macro_f1": 82.6
    },
    "medals": {
     "n": 132,
-    "accuracy": 80.3,
-    "macro_f1": 78.4
+    "accuracy": 95.5,
+    "macro_f1": 96.7
    },
    "sports_other": {
     "n": 1,
@@ -1833,18 +2899,640 @@
     "macro_f1": 33.3
    },
    "transport": {
-    "n": 280,
-    "accuracy": 72.5,
-    "macro_f1": 76.3
+    "n": 367,
+    "accuracy": 85.0,
+    "macro_f1": 86.1
    },
    "world_stats": {
-    "n": 299,
-    "accuracy": 82.6,
-    "macro_f1": 83.4
+    "n": 450,
+    "accuracy": 81.3,
+    "macro_f1": 83.3
    }
   },
-  "subset_macro_f1_definition": "fixed SUPPORTS/REFUTES/NEI; undefined per-label F1 is zero",
-  "requested_model": "deepseek-chat",
-  "predictions": "predictions/deepseek-chat__oracle-program/predictions.jsonl"
+  "predictions": "predictions/google_gemini-3-flash-preview__full-table/predictions.jsonl"
+ },
+ "gpt-5.4-mini__full-table": {
+  "model": "openai/gpt-5.4-mini",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 59.9,
+  "macro_f1": 64.2,
+  "f1": {
+   "SUPPORTS": 60.8,
+   "REFUTES": 53.4,
+   "NEI": 78.4
+  },
+  "invalid": 8,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 771,
+    "REFUTES": 281,
+    "NEI": 6,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 676,
+    "REFUTES": 612,
+    "NEI": 16,
+    "INVALID": 0
+   },
+   "NEI": {
+    "SUPPORTS": 33,
+    "REFUTES": 93,
+    "NEI": 283,
+    "INVALID": 8
+   }
+  },
+  "accuracy_ci95": [
+   58.0,
+   61.6
+  ],
+  "macro_f1_ci95": [
+   62.3,
+   65.8
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 47.8,
+    "macro_f1": 51.1
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 56.5,
+    "macro_f1": 63.7
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 58.6,
+    "macro_f1": 62.0
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 50.0,
+    "macro_f1": 30.0
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 34.4,
+    "macro_f1": 35.4
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 62.5,
+    "macro_f1": 41.3
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 60.1,
+    "macro_f1": 61.9
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 48.3,
+    "macro_f1": 49.5
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 49.1,
+    "macro_f1": 56.0
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 76.5,
+    "macro_f1": 78.8
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 70.0,
+    "macro_f1": 67.9
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 55.0,
+    "macro_f1": 56.4
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 74.4,
+    "macro_f1": 75.6
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 60.0,
+    "macro_f1": 64.3
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 69.6,
+    "macro_f1": 70.8
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 52.1,
+    "macro_f1": 35.0
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 57.4,
+    "macro_f1": 63.0
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 60.8,
+    "macro_f1": 66.9
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 72.5,
+    "macro_f1": 72.9
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 60.0,
+    "macro_f1": 59.5
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 62.0,
+    "macro_f1": 64.3
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 52.2,
+    "macro_f1": 34.4
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 70.6,
+    "macro_f1": 69.2
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 71.9,
+    "macro_f1": 66.8
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 66.7,
+    "macro_f1": 70.8
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 44.8,
+    "macro_f1": 27.6
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 57.6,
+    "macro_f1": 64.5
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 56.4,
+    "macro_f1": 61.3
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 67.4,
+    "macro_f1": 65.5
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 100.0,
+    "macro_f1": 33.3
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 52.0,
+    "macro_f1": 54.4
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 65.1,
+    "macro_f1": 70.3
+   }
+  },
+  "predictions": "predictions/openai_gpt-5.4-mini__full-table/predictions.jsonl"
+ },
+ "qwen3-14b__full-table": {
+  "model": "qwen3-14b",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 51.9,
+  "macro_f1": 53.6,
+  "f1": {
+   "SUPPORTS": 60.0,
+   "REFUTES": 30.4,
+   "NEI": 70.4
+  },
+  "invalid": 1,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 908,
+    "REFUTES": 129,
+    "NEI": 21,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 984,
+    "REFUTES": 271,
+    "NEI": 48,
+    "INVALID": 1
+   },
+   "NEI": {
+    "SUPPORTS": 75,
+    "REFUTES": 78,
+    "NEI": 264,
+    "INVALID": 0
+   }
+  },
+  "accuracy_ci95": [
+   50.2,
+   53.8
+  ],
+  "macro_f1_ci95": [
+   51.9,
+   55.4
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 42.5,
+    "macro_f1": 43.7
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 50.4,
+    "macro_f1": 55.7
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 56.1,
+    "macro_f1": 54.4
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 36.7,
+    "macro_f1": 17.9
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 56.2,
+    "macro_f1": 53.1
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 50.0,
+    "macro_f1": 22.2
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 56.3,
+    "macro_f1": 59.3
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 48.3,
+    "macro_f1": 48.6
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 50.0,
+    "macro_f1": 53.0
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 51.5,
+    "macro_f1": 45.9
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 58.5,
+    "macro_f1": 52.3
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 43.1,
+    "macro_f1": 36.3
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 56.6,
+    "macro_f1": 54.5
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 52.5,
+    "macro_f1": 53.5
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 61.6,
+    "macro_f1": 62.0
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 42.7,
+    "macro_f1": 27.0
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 50.2,
+    "macro_f1": 51.8
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 45.1,
+    "macro_f1": 44.6
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 75.0,
+    "macro_f1": 78.9
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 68.0,
+    "macro_f1": 68.8
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 54.8,
+    "macro_f1": 55.1
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 47.8,
+    "macro_f1": 25.8
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 52.9,
+    "macro_f1": 54.0
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 68.8,
+    "macro_f1": 37.3
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 53.5,
+    "macro_f1": 50.9
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 37.9,
+    "macro_f1": 22.7
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 47.1,
+    "macro_f1": 52.5
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 50.7,
+    "macro_f1": 54.2
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 58.3,
+    "macro_f1": 59.0
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 0.0,
+    "macro_f1": 0.0
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 47.7,
+    "macro_f1": 46.9
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 54.0,
+    "macro_f1": 56.1
+   }
+  },
+  "predictions": "predictions/qwen3-14b__full-table/predictions.jsonl"
+ },
+ "qwen3-8b__full-table": {
+  "model": "qwen3-8b",
+  "setting": "full-table",
+  "n": 2779,
+  "accuracy": 50.3,
+  "macro_f1": 49.9,
+  "f1": {
+   "SUPPORTS": 51.5,
+   "REFUTES": 49.7,
+   "NEI": 48.6
+  },
+  "invalid": 1,
+  "confusion": {
+   "SUPPORTS": {
+    "SUPPORTS": 587,
+    "REFUTES": 382,
+    "NEI": 89,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 574,
+    "REFUTES": 609,
+    "NEI": 120,
+    "INVALID": 1
+   },
+   "NEI": {
+    "SUPPORTS": 62,
+    "REFUTES": 154,
+    "NEI": 201,
+    "INVALID": 0
+   }
+  },
+  "accuracy_ci95": [
+   48.3,
+   52.2
+  ],
+  "macro_f1_ci95": [
+   47.8,
+   52.0
+  ],
+  "by_group": {
+   "Arithmetic across tables": {
+    "n": 341,
+    "accuracy": 45.7,
+    "macro_f1": 36.6
+   },
+   "Category decomposition": {
+    "n": 361,
+    "accuracy": 46.0,
+    "macro_f1": 43.6
+   },
+   "Cross-period growth": {
+    "n": 285,
+    "accuracy": 44.9,
+    "macro_f1": 47.3
+   },
+   "Cross-period joined aggregate": {
+    "n": 30,
+    "accuracy": 53.3,
+    "macro_f1": 34.3
+   },
+   "Join-filter aggregation": {
+    "n": 32,
+    "accuracy": 59.4,
+    "macro_f1": 60.5
+   },
+   "Join-group aggregation": {
+    "n": 8,
+    "accuracy": 62.5,
+    "macro_f1": 41.3
+   },
+   "Nested bridge lookup": {
+    "n": 158,
+    "accuracy": 61.4,
+    "macro_f1": 63.9
+   },
+   "Ordinal across join": {
+    "n": 60,
+    "accuracy": 30.0,
+    "macro_f1": 29.4
+   },
+   "Ratio across tables": {
+    "n": 220,
+    "accuracy": 47.3,
+    "macro_f1": 47.2
+   },
+   "Real-join rank–bridge": {
+    "n": 136,
+    "accuracy": 55.9,
+    "macro_f1": 51.6
+   },
+   "Single-table comparison & ranking": {
+    "n": 710,
+    "accuracy": 55.4,
+    "macro_f1": 46.9
+   },
+   "Two-entity cross-table comparison": {
+    "n": 269,
+    "accuracy": 43.1,
+    "macro_f1": 37.1
+   },
+   "Uniqueness across join": {
+    "n": 129,
+    "accuracy": 64.3,
+    "macro_f1": 64.2
+   },
+   "Universal across join": {
+    "n": 40,
+    "accuracy": 50.0,
+    "macro_f1": 48.1
+   }
+  },
+  "by_topology": {
+   "single": {
+    "n": 900,
+    "accuracy": 54.6,
+    "macro_f1": 54.8
+   },
+   "three_plus_table": {
+    "n": 722,
+    "accuracy": 44.0,
+    "macro_f1": 31.4
+   },
+   "two_table": {
+    "n": 1157,
+    "accuracy": 50.8,
+    "macro_f1": 53.5
+   }
+  },
+  "by_domain": {
+   "basketball": {
+    "n": 255,
+    "accuracy": 48.2,
+    "macro_f1": 39.6
+   },
+   "culture": {
+    "n": 40,
+    "accuracy": 57.5,
+    "macro_f1": 56.3
+   },
+   "demographics": {
+    "n": 75,
+    "accuracy": 52.0,
+    "macro_f1": 52.4
+   },
+   "economy": {
+    "n": 345,
+    "accuracy": 47.0,
+    "macro_f1": 47.3
+   },
+   "education": {
+    "n": 69,
+    "accuracy": 30.4,
+    "macro_f1": 24.6
+   },
+   "energy": {
+    "n": 34,
+    "accuracy": 61.8,
+    "macro_f1": 59.1
+   },
+   "film": {
+    "n": 32,
+    "accuracy": 59.4,
+    "macro_f1": 35.9
+   },
+   "football": {
+    "n": 144,
+    "accuracy": 50.7,
+    "macro_f1": 48.2
+   },
+   "football_intl": {
+    "n": 29,
+    "accuracy": 62.1,
+    "macro_f1": 39.3
+   },
+   "geography": {
+    "n": 191,
+    "accuracy": 54.5,
+    "macro_f1": 55.8
+   },
+   "infrastructure": {
+    "n": 615,
+    "accuracy": 49.4,
+    "macro_f1": 49.6
+   },
+   "medals": {
+    "n": 132,
+    "accuracy": 53.0,
+    "macro_f1": 47.8
+   },
+   "sports_other": {
+    "n": 1,
+    "accuracy": 100.0,
+    "macro_f1": 33.3
+   },
+   "transport": {
+    "n": 367,
+    "accuracy": 52.3,
+    "macro_f1": 52.0
+   },
+   "world_stats": {
+    "n": 450,
+    "accuracy": 50.4,
+    "macro_f1": 51.3
+   }
+  },
+  "predictions": "predictions/qwen3-8b__full-table/predictions.jsonl"
  }
 }
