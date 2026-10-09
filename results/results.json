@@ -31,6 +31,7 @@
     "INVALID": 1
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/anthropic_claude-haiku-4.5__full-table/predictions.jsonl"
  },
  "deepseek-v4-flash__chain-table": {
@@ -65,6 +66,7 @@
     "INVALID": 78
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__chain-table/predictions.jsonl"
  },
  "deepseek-v4-flash__claim-only": {
@@ -99,6 +101,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__claim-only/predictions.jsonl"
  },
  "deepseek-v4-flash__full-table": {
@@ -133,6 +136,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__full-table/predictions.jsonl"
  },
  "deepseek-v4-flash__oracle-evidence": {
@@ -167,6 +171,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__oracle-evidence/predictions.jsonl"
  },
  "deepseek-v4-flash__oracle-program": {
@@ -201,6 +206,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__oracle-program/predictions.jsonl"
  },
  "deepseek-v4-flash__react-agent": {
@@ -235,6 +241,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__react-agent/predictions.jsonl"
  },
  "deepseek-v4-flash__reactable": {
@@ -269,6 +276,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__reactable/predictions.jsonl"
  },
  "deepseek-v4-flash__text2sql": {
@@ -303,6 +311,7 @@
     "INVALID": 5
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-chat__text2sql/predictions.jsonl"
  },
  "deepseek-v4-pro__claim-only": {
@@ -337,6 +346,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-v4-pro__claim-only/predictions.jsonl"
  },
  "deepseek-v4-pro__full-table": {
@@ -371,6 +381,7 @@
     "INVALID": 1
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-v4-pro__full-table/predictions.jsonl"
  },
  "deepseek-v4-pro__oracle-evidence": {
@@ -405,6 +416,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-v4-pro__oracle-evidence/predictions.jsonl"
  },
  "deepseek-v4-pro__oracle-program": {
@@ -439,6 +451,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/deepseek-v4-pro__oracle-program/predictions.jsonl"
  },
  "glm-5.1__full-table": {
@@ -473,6 +486,7 @@
     "INVALID": 3
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/glm-5.1__full-table/predictions.jsonl"
  },
  "gemini-3-flash__full-table": {
@@ -507,38 +521,39 @@
     "INVALID": 2
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/google_gemini-3-flash-preview__full-table/predictions.jsonl"
  },
  "gemini-3-flash__react-agent": {
   "model": "google/gemini-3-flash-preview",
   "setting": "react-agent",
   "n": 4279,
-  "accuracy": 76.8,
-  "macro_f1": 76.7,
+  "accuracy": 76.9,
+  "macro_f1": 76.8,
   "f1": {
    "SUPPORTS": 76.4,
    "REFUTES": 78.8,
-   "NEI": 75.0
+   "NEI": 75.1
   },
-  "invalid": 45,
+  "invalid": 44,
   "confusion": {
    "SUPPORTS": {
     "SUPPORTS": 1272,
-    "REFUTES": 322,
+    "REFUTES": 323,
+    "NEI": 1,
+    "INVALID": 0
+   },
+   "REFUTES": {
+    "SUPPORTS": 326,
+    "REFUTES": 1505,
     "NEI": 1,
     "INVALID": 1
    },
-   "REFUTES": {
-    "SUPPORTS": 325,
-    "REFUTES": 1505,
-    "NEI": 1,
-    "INVALID": 2
-   },
    "NEI": {
     "SUPPORTS": 135,
-    "REFUTES": 162,
-    "NEI": 511,
-    "INVALID": 42
+    "REFUTES": 160,
+    "NEI": 512,
+    "INVALID": 43
    }
   },
   "predictions": "predictions/google_gemini-3-flash-preview__react-agent/predictions.jsonl"
@@ -575,6 +590,7 @@
     "INVALID": 8
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/openai_gpt-5.4-mini__full-table/predictions.jsonl"
  },
  "qwen3-14b__full-table": {
@@ -609,6 +625,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/qwen3-14b__full-table/predictions.jsonl"
  },
  "qwen3-8b__full-table": {
@@ -643,6 +660,7 @@
     "INVALID": 0
    }
   },
+  "earlier_wording": 683,
   "predictions": "predictions/qwen3-8b__full-table/predictions.jsonl"
  }
 }

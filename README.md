@@ -28,6 +28,7 @@ Files:
 - `data/table_snapshots.jsonl` - the tables, with page and revision
 - `data/execution_traces.jsonl` - the value of every program step
 - `data/skeleton_registry.jsonl` - program skeletons and the source-dataset programs behind them
+- `data/rewording.jsonl` - claims reworded on 2026-10-09, old and new text
 - `data/quarantine.jsonl`, `data/repairs.jsonl`, `data/known_issues.jsonl` - removed records, rule-based repairs
   (labels unchanged), wording issues we know about
 - `data/stats.json` - counts by label, group, skeleton, domain and topology
@@ -37,7 +38,7 @@ Files:
 Example (tables, program and evidence left out):
 
 ```json
-{"id": "r9-01033", "claim": "《八千米以上山峰列表》中，位于巴基斯坦中国的山峰死亡人数合计144人。", "label": "REFUTES"}
+{"id": "r9-01033", "claim": "《八千米以上山峰列表》中，位置为“巴基斯坦、中国”的山峰死亡人数合计144人。", "label": "REFUTES"}
 ```
 
 Other fields: `tables`, `program` (skeleton, operators, slots), `evidence_cells`, `context_cells`, `table_topology`,
@@ -78,7 +79,7 @@ Full tables, thinking off, label-first prompt. Invalid outputs and failed API ca
 | Qwen3-8B | 47.0 | 45.3 |
 | Text-to-SQL (DeepSeek-V4-Flash) | 73.6 | 76.4 |
 | ReAcTable-style agent (DeepSeek-V4-Flash) | 86.1 | 87.8 |
-| ReAcTable-style agent (Gemini-3-Flash) | 76.8 | 76.7 |
+| ReAcTable-style agent (Gemini-3-Flash) | 76.9 | 76.8 |
 | Chain-of-Table-style agent (DeepSeek-V4-Flash) | 49.0 | 57.6 |
 
 Models other than DeepSeek were only run in the full-table setting (plus the agent with Gemini).
@@ -95,6 +96,11 @@ Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/re
 - Two annotators labeled two samples of 300 records (ids `r9-*`, `r10-*`); protocol and agreement are in the paper.
   The `r11-*` / `r12-*` records are in neither sample; they were checked by program replay and a blind model audit
   (99.7% agreement).
+- On 2026-10-09 we reworded 652 claims that read badly, and in 61 records a cell that lists several
+  entries got its separator back (`巴基斯坦、中国`, was `巴基斯坦中国`). Labels and programs did not change;
+  `data/rewording.jsonl` has the old and new text. Only the Gemini agent was rerun on these 683 records
+  (96.8 before, 96.9 after). In the other runs their predictions answer the old
+  wording and are marked `earlier_wording`. 156 of the 600 annotated records are among the reworded ones.
 - Before 2026-10-09 two instance counts in `data/skeleton_registry.jsonl` (NB_LOOKUP2, RJ_MEMBER_RANK) were the
   total of the card the two skeletons share. Fixed since.
 

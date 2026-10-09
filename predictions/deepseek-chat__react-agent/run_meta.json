@@ -9,7 +9,8 @@
   "sql_agents.py": "5807410817ebf830f444822fff2e0516f25679ebc7b063ae52258377e5854d8f",
   "tables.py": "8110583152e6c0dbf86de1942df1d63cf5a0c58dc8c5ed2e9ea9aa18a18320d3"
  },
- "started_at_utc": "2026-10-09T01:45:24.585502+00:00",
+ "started_at_utc": "2026-10-09T17:28:29.600483+00:00",
  "max_turns": 5,
- "show_rows": 30
+ "show_rows": 30,
+ "wording_note": "683 responses answer the wording the record had before 2026-10-09 (earlier_wording: true; see data/rewording.jsonl)"
 }
