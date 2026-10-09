@@ -99,7 +99,7 @@ Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/re
   recorded. 9 of these records were removed later and 25 reworded. The `r11-*` / `r12-*`
   records are in neither sample; they were checked by program replay and a blind model audit
   (99.7% agreement).
-- In commit `a5f221d` two instance counts in `data/skeleton_registry.jsonl` (NB_LOOKUP2, RJ_MEMBER_RANK) were the
+- Before 2026-10-09 two instance counts in `data/skeleton_registry.jsonl` (NB_LOOKUP2, RJ_MEMBER_RANK) were the
   total of the card the two skeletons share. Fixed since.
 
 ## License
