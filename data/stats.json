@@ -1,17 +1,17 @@
 {
- "claims": 2779,
+ "claims": 4279,
  "labels": {
-  "SUPPORTS": 1058,
-  "REFUTES": 1304,
-  "NEI": 417
+  "SUPPORTS": 1596,
+  "REFUTES": 1833,
+  "NEI": 850
  },
- "evidence_packages": 1431,
- "source_pages": 350,
- "distinct_tables_in_packages": 1000,
- "raw_wikipedia_tables": 711,
- "avg_evidence_cells_decidable": 28.66,
- "skeletons": 45,
- "groups": 14,
+ "evidence_packages": 1746,
+ "source_pages": 545,
+ "distinct_tables_in_packages": 1209,
+ "raw_wikipedia_tables": 910,
+ "avg_evidence_cells_decidable": 28.39,
+ "skeletons": 47,
+ "groups": 15,
  "group_by_label": {
   "Arithmetic across tables": {
    "SUPPORTS": 125,
@@ -61,10 +61,14 @@
    "SUPPORTS": 57,
    "NEI": 24
   },
+  "Single-table aggregation": {
+   "SUPPORTS": 202,
+   "REFUTES": 202
+  },
   "Single-table comparison & ranking": {
-   "SUPPORTS": 327,
-   "REFUTES": 330,
-   "NEI": 53
+   "SUPPORTS": 663,
+   "REFUTES": 657,
+   "NEI": 486
   },
   "Two-entity cross-table comparison": {
    "REFUTES": 107,
@@ -245,23 +249,33 @@
    "REFUTES": 18,
    "SUPPORTS": 12
   },
+  "ST_AVG": {
+   "SUPPORTS": 99,
+   "REFUTES": 99
+  },
   "ST_COMPARE": {
-   "SUPPORTS": 213,
-   "REFUTES": 162,
-   "NEI": 43
+   "SUPPORTS": 302,
+   "REFUTES": 251,
+   "NEI": 221
   },
   "ST_COUNT_GT": {
-   "SUPPORTS": 20,
-   "REFUTES": 30
+   "SUPPORTS": 168,
+   "REFUTES": 176,
+   "NEI": 64
   },
   "ST_DIFF": {
-   "SUPPORTS": 62,
-   "REFUTES": 93
+   "SUPPORTS": 151,
+   "REFUTES": 182,
+   "NEI": 178
+  },
+  "ST_SUM": {
+   "REFUTES": 103,
+   "SUPPORTS": 103
   },
   "ST_SUPERLATIVE": {
-   "SUPPORTS": 32,
-   "REFUTES": 45,
-   "NEI": 10
+   "SUPPORTS": 42,
+   "REFUTES": 48,
+   "NEI": 23
   },
   "UQ_ONE": {
    "SUPPORTS": 11,
@@ -293,12 +307,12 @@
   }
  },
  "topology": {
-  "single": 900,
+  "single": 2400,
   "two_table": 1157,
   "three_plus_table": 722
  },
  "package_kind": {
-  "single": 710,
+  "single": 2210,
   "period_pair": 315,
   "split_pair": 269,
   "rank_detail": 136,
@@ -309,42 +323,42 @@
   "hub_profile": 19
  },
  "domain": {
-  "world_stats": 450,
-  "medals": 132,
+  "world_stats": 572,
+  "medals": 1304,
   "film": 32,
-  "football_intl": 29,
+  "football_intl": 41,
   "education": 69,
-  "football": 144,
-  "basketball": 255,
+  "football": 188,
+  "basketball": 279,
   "transport": 367,
-  "economy": 345,
-  "infrastructure": 615,
-  "demographics": 75,
-  "geography": 191,
+  "economy": 401,
+  "infrastructure": 639,
+  "demographics": 111,
+  "geography": 197,
   "sports_other": 1,
   "energy": 34,
-  "culture": 40
+  "culture": 44
  },
  "domain_by_label": {
   "basketball": {
-   "REFUTES": 140,
-   "SUPPORTS": 92,
-   "NEI": 23
+   "REFUTES": 145,
+   "SUPPORTS": 99,
+   "NEI": 35
   },
   "culture": {
-   "SUPPORTS": 22,
-   "REFUTES": 13,
+   "SUPPORTS": 24,
+   "REFUTES": 15,
    "NEI": 5
   },
   "demographics": {
-   "REFUTES": 25,
-   "NEI": 21,
-   "SUPPORTS": 29
+   "REFUTES": 34,
+   "NEI": 39,
+   "SUPPORTS": 38
   },
   "economy": {
-   "SUPPORTS": 114,
-   "REFUTES": 141,
-   "NEI": 90
+   "SUPPORTS": 132,
+   "REFUTES": 153,
+   "NEI": 116
   },
   "education": {
    "SUPPORTS": 33,
@@ -362,28 +376,29 @@
    "NEI": 2
   },
   "football": {
-   "REFUTES": 60,
-   "SUPPORTS": 58,
-   "NEI": 26
+   "REFUTES": 68,
+   "SUPPORTS": 72,
+   "NEI": 48
   },
   "football_intl": {
-   "REFUTES": 20,
-   "SUPPORTS": 9
+   "REFUTES": 22,
+   "SUPPORTS": 13,
+   "NEI": 6
   },
   "geography": {
-   "REFUTES": 102,
-   "SUPPORTS": 69,
-   "NEI": 20
+   "REFUTES": 104,
+   "SUPPORTS": 70,
+   "NEI": 23
   },
   "infrastructure": {
-   "REFUTES": 308,
-   "SUPPORTS": 219,
-   "NEI": 88
+   "REFUTES": 315,
+   "SUPPORTS": 224,
+   "NEI": 100
   },
   "medals": {
-   "REFUTES": 64,
-   "SUPPORTS": 59,
-   "NEI": 9
+   "REFUTES": 513,
+   "SUPPORTS": 502,
+   "NEI": 289
   },
   "sports_other": {
    "REFUTES": 1
@@ -394,30 +409,32 @@
    "REFUTES": 169
   },
   "world_stats": {
-   "SUPPORTS": 178,
-   "REFUTES": 202,
-   "NEI": 70
+   "SUPPORTS": 213,
+   "REFUTES": 235,
+   "NEI": 124
   }
  },
- "topics": 364,
+ "topics": 560,
  "largest_topic": [
-  "2012年至2013年中国男子篮球职业联赛",
-  50
+  "世界货柜吞吐量最大港口列表",
+  68
  ],
- "derived_tables_share": 0.284,
+ "derived_tables_share": 0.237,
  "nei_axis": {
   "missing_table": 309,
   "metric": 38,
-  "entity": 70
+  "entity": 70,
+  "wrong_edition": 433
  },
  "refute_axis": {
   "direction": 20,
   "not_established": 5,
-  "number": 729,
-  "entity": 63,
-  "entity_order": 147,
+  "number": 849,
+  "entity": 66,
+  "entity_order": 236,
   "rank": 35,
   "entity_or_value": 102,
-  "bridge_entity": 203
+  "bridge_entity": 203,
+  "total_row": 317
  }
 }

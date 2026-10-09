@@ -111,3 +111,5 @@
 {"id": "r10-00982", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
 {"id": "r10-00985", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
 {"id": "r10-00985", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "r11-00373", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "r11-00374", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
