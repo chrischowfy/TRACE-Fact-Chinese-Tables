@@ -32,7 +32,6 @@ Files:
   (labels unchanged), wording issues we know about
 - `data/stats.json` - counts by label, group, skeleton, domain and topology
 - `predictions/` - raw model outputs and run settings; `results/results.json` - scores
-- `annotation/` - guideline, samples and judgments of the two human annotation rounds
 - `code/eval/` - prompts, agents, scoring
 
 Example (tables, program and evidence left out):
@@ -93,11 +92,8 @@ Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/re
 - Evidence cells are the cells the program depends on, not a minimal proof.
 - The sentence about rounding was added to the prompt on 2026-10-07. In each DeepSeek run 2,202 responses
   were requested before that; every response carries its request time.
-- Two annotators (grad students, native Chinese speakers) labeled two samples of 300 records (ids `r9-*`, `r10-*`).
-  Sample 1: they agree on 291 of 299 labels, Cohen's κ = 0.96. Sample 2: both gave
-  the released label on all 300; notes and cell coordinates were written up with software help, no timing
-  recorded. 9 of these records were removed later and 25 reworded. The `r11-*` / `r12-*`
-  records are in neither sample; they were checked by program replay and a blind model audit
+- Two annotators labeled two samples of 300 records (ids `r9-*`, `r10-*`); protocol and agreement are in the paper.
+  The `r11-*` / `r12-*` records are in neither sample; they were checked by program replay and a blind model audit
   (99.7% agreement).
 - Before 2026-10-09 two instance counts in `data/skeleton_registry.jsonl` (NB_LOOKUP2, RJ_MEMBER_RANK) were the
   total of the card the two skeletons share. Fixed since.
