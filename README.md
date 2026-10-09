@@ -38,7 +38,7 @@ Files:
 Example (tables, program and evidence left out):
 
 ```json
-{"id": "r9-01033", "claim": "《八千米以上山峰列表》中，位置为“巴基斯坦、中国”的山峰死亡人数合计144人。", "label": "REFUTES"}
+{"id": "r9-00088", "claim": "冬奥会奖牌榜上，挪威2014年的金牌数比2010年增加了1枚。", "label": "REFUTES"}
 ```
 
 Other fields: `tables`, `program` (skeleton, operators, slots), `evidence_cells`, `context_cells`, `table_topology`,
