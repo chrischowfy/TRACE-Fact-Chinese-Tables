@@ -11,6 +11,5 @@
  },
  "started_at_utc": "2026-10-09T17:28:30.873908+00:00",
  "max_turns": 5,
- "prompt_note": "2202 responses were requested before 2026-10-07 with this prompt without its sentence on rounding; each response keeps its request time",
- "wording_note": "683 responses answer the wording the record had before 2026-10-09 (earlier_wording: true; see data/rewording.jsonl)"
+ "prompt_note": "2202 responses were requested before 2026-10-07 with this prompt without its sentence on rounding; each response keeps its request time"
 }

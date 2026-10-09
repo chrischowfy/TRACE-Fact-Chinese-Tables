@@ -14,6 +14,5 @@
   "tables.py": "8110583152e6c0dbf86de1942df1d63cf5a0c58dc8c5ed2e9ea9aa18a18320d3"
  },
  "started_at_utc": "2026-10-09T17:28:29.218641+00:00",
- "prompt_note": "2202 responses were requested before 2026-10-07 with this prompt without its sentence on rounding; each response keeps its request time",
- "wording_note": "683 responses answer the wording the record had before 2026-10-09 (earlier_wording: true; see data/rewording.jsonl)"
+ "prompt_note": "2202 responses were requested before 2026-10-07 with this prompt without its sentence on rounding; each response keeps its request time"
 }

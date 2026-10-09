@@ -11,6 +11,5 @@
  },
  "started_at_utc": "2026-10-09T17:28:29.600483+00:00",
  "max_turns": 5,
- "show_rows": 30,
- "wording_note": "683 responses answer the wording the record had before 2026-10-09 (earlier_wording: true; see data/rewording.jsonl)"
+ "show_rows": 30
 }

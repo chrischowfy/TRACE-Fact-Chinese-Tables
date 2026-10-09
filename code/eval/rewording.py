@@ -42,23 +42,6 @@ def earlier(record, row):
     return old
 
 
-EARLIER = {}      # id -> line of rewording.jsonl; set by the tools that read the predictions of an R13 evaluation
-
-
-def answers(prediction, record, current_hash):
-    """Is the stored prediction a response to this record?  Either to its current input, or - for a row marked
-    earlier_wording (tools/carry_over_r13.py) - to the record as it was before the wording pass."""
-    if prediction.get('input_sha256') == current_hash:
-        return not prediction.get('earlier_wording')
-    row = EARLIER.get(record['id'])
-    return bool(row) and prediction.get('earlier_wording') is True and prediction.get('input_sha256') == row['input_sha256_before']
-
-
-def claim_answered(prediction, record):
-    """The claim text the prediction answered."""
-    return EARLIER[record['id']]['claim_before'] if prediction.get('earlier_wording') else record['claim']
-
-
 def load(release):
     """id -> line of rewording.jsonl; empty for a release without the file."""
     path = Path(release) / 'rewording.jsonl'
