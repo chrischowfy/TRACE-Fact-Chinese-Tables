@@ -104,7 +104,9 @@ Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/re
 
 ## License
 
-Data: [CC BY-SA 4.0](LICENSE), keep the Wikipedia URLs and revision ids. Code: [MIT](LICENSE-CODE).
+Data (`data/`): [CC BY-SA 4.0](LICENSE). The tables come from Chinese Wikipedia, which is CC BY-SA too, so
+share-alike carries over. If you redistribute, keep each table's `source.url` and `source.revision_id` so the page
+and revision can be credited. Code (`code/`): [MIT](LICENSE-CODE).
 
 ## Citation
 
