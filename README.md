@@ -87,23 +87,6 @@ Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/re
 (`sql_agents.py`) only showed 6 rows of each query result without saying there were more; it got 83.2
 (`predictions/deepseek-chat__reactable`).
 
-## Notes
-
-- NEI means "not decidable from the given tables", not "false".
-- Evidence cells are the cells the program depends on, not a minimal proof.
-- The sentence about rounding was added to the prompt on 2026-10-07. In each DeepSeek run 2,202 responses
-  were requested before that; every response carries its request time.
-- Two annotators labeled two samples of 300 records (ids `r9-*`, `r10-*`); protocol and agreement are in the paper.
-  The `r11-*` / `r12-*` records are in neither sample; they were checked by program replay and a blind model audit
-  (99.7% agreement).
-- On 2026-10-09 we reworded 652 claims that read badly, and in 61 records a cell that lists several
-  entries got its separator back (`巴基斯坦、中国`, was `巴基斯坦中国`). Labels and programs did not change;
-  `data/rewording.jsonl` has the old and new text. Only the Gemini agent was rerun on these 683 records
-  (96.8 before, 96.9 after). In the other runs their predictions answer the old
-  wording and are marked `earlier_wording`. 156 of the 600 annotated records are among the reworded ones.
-- Before 2026-10-09 two instance counts in `data/skeleton_registry.jsonl` (NB_LOOKUP2, RJ_MEMBER_RANK) were the
-  total of the card the two skeletons share. Fixed since.
-
 ## License
 
 Data (`data/`): [CC BY-SA 4.0](LICENSE). The tables come from Chinese Wikipedia, which is CC BY-SA too, so
