@@ -28,7 +28,6 @@ Files:
 - `data/table_snapshots.jsonl` - the tables, with page and revision
 - `data/execution_traces.jsonl` - the value of every program step
 - `data/skeleton_registry.jsonl` - program skeletons and the source-dataset programs behind them
-- `data/rewording.jsonl` - claims reworded on 2026-10-09, old and new text
 - `data/quarantine.jsonl`, `data/repairs.jsonl`, `data/known_issues.jsonl` - removed records, rule-based repairs
   (labels unchanged), wording issues we know about
 - `data/stats.json` - counts by label, group, skeleton, domain and topology
