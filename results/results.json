@@ -2,6 +2,37 @@
  "claude-haiku-4.5__full-table": {
   "model": "anthropic/claude-haiku-4.5",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 67.8,
+   "macro_f1": 72.1,
+   "f1": {
+    "SUPPORTS": 60.8,
+    "REFUTES": 62.2,
+    "NEI": 93.3
+   },
+   "invalid": 34,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1009,
+     "REFUTES": 526,
+     "NEI": 41,
+     "INVALID": 20
+    },
+    "REFUTES": {
+     "SUPPORTS": 699,
+     "REFUTES": 1069,
+     "NEI": 52,
+     "INVALID": 13
+    },
+    "NEI": {
+     "SUPPORTS": 13,
+     "REFUTES": 12,
+     "NEI": 824,
+     "INVALID": 1
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 63.0,
@@ -250,6 +281,37 @@
  "deepseek-v4-flash__chain-table": {
   "model": "deepseek-chat",
   "setting": "chain-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 49.0,
+   "macro_f1": 57.6,
+   "f1": {
+    "SUPPORTS": 47.3,
+    "REFUTES": 51.5,
+    "NEI": 73.9
+   },
+   "invalid": 986,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 641,
+     "REFUTES": 374,
+     "NEI": 115,
+     "INVALID": 466
+    },
+    "REFUTES": {
+     "SUPPORTS": 422,
+     "REFUTES": 781,
+     "NEI": 188,
+     "INVALID": 442
+    },
+    "NEI": {
+     "SUPPORTS": 51,
+     "REFUTES": 45,
+     "NEI": 676,
+     "INVALID": 78
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 46.6,
@@ -498,6 +560,37 @@
  "deepseek-v4-flash__claim-only": {
   "model": "deepseek-chat",
   "setting": "claim-only",
+  "all": {
+   "n": 4279,
+   "accuracy": 19.9,
+   "macro_f1": 11.0,
+   "f1": {
+    "SUPPORTS": 0.0,
+    "REFUTES": 0.0,
+    "NEI": 33.1
+   },
+   "invalid": 0,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 1596,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 1833,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 850,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 15.0,
@@ -746,6 +839,37 @@
  "deepseek-v4-flash__full-table": {
   "model": "deepseek-chat",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 74.1,
+   "macro_f1": 76.0,
+   "f1": {
+    "SUPPORTS": 72.8,
+    "REFUTES": 67.1,
+    "NEI": 88.0
+   },
+   "invalid": 2,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1286,
+     "REFUTES": 238,
+     "NEI": 71,
+     "INVALID": 1
+    },
+    "REFUTES": {
+     "SUPPORTS": 641,
+     "REFUTES": 1050,
+     "NEI": 141,
+     "INVALID": 1
+    },
+    "NEI": {
+     "SUPPORTS": 8,
+     "REFUTES": 7,
+     "NEI": 835,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 69.5,
@@ -994,6 +1118,37 @@
  "deepseek-v4-flash__oracle-evidence": {
   "model": "deepseek-chat",
   "setting": "oracle-evidence",
+  "all": {
+   "n": 4279,
+   "accuracy": 82.4,
+   "macro_f1": 84.6,
+   "f1": {
+    "SUPPORTS": 80.4,
+    "REFUTES": 77.4,
+    "NEI": 96.0
+   },
+   "invalid": 0,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1408,
+     "REFUTES": 186,
+     "NEI": 2,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 496,
+     "REFUTES": 1282,
+     "NEI": 55,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 3,
+     "REFUTES": 10,
+     "NEI": 837,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 78.7,
@@ -1242,6 +1397,37 @@
  "deepseek-v4-flash__oracle-program": {
   "model": "deepseek-chat",
   "setting": "oracle-program",
+  "all": {
+   "n": 4279,
+   "accuracy": 76.7,
+   "macro_f1": 79.7,
+   "f1": {
+    "SUPPORTS": 74.8,
+    "REFUTES": 67.6,
+    "NEI": 96.8
+   },
+   "invalid": 0,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1411,
+     "REFUTES": 171,
+     "NEI": 14,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 768,
+     "REFUTES": 1024,
+     "NEI": 41,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 0,
+     "REFUTES": 1,
+     "NEI": 849,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 74.1,
@@ -1490,6 +1676,37 @@
  "deepseek-v4-flash__react-agent": {
   "model": "deepseek-chat",
   "setting": "react-agent",
+  "all": {
+   "n": 4279,
+   "accuracy": 86.1,
+   "macro_f1": 87.8,
+   "f1": {
+    "SUPPORTS": 83.1,
+    "REFUTES": 85.0,
+    "NEI": 95.2
+   },
+   "invalid": 22,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1325,
+     "REFUTES": 248,
+     "NEI": 15,
+     "INVALID": 8
+    },
+    "REFUTES": {
+     "SUPPORTS": 245,
+     "REFUTES": 1557,
+     "NEI": 17,
+     "INVALID": 14
+    },
+    "NEI": {
+     "SUPPORTS": 24,
+     "REFUTES": 24,
+     "NEI": 802,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 97.0,
@@ -1738,6 +1955,37 @@
  "deepseek-v4-flash__reactable": {
   "model": "deepseek-chat",
   "setting": "reactable",
+  "all": {
+   "n": 4279,
+   "accuracy": 83.2,
+   "macro_f1": 85.1,
+   "f1": {
+    "SUPPORTS": 79.4,
+    "REFUTES": 82.0,
+    "NEI": 93.7
+   },
+   "invalid": 22,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1241,
+     "REFUTES": 315,
+     "NEI": 31,
+     "INVALID": 9
+    },
+    "REFUTES": {
+     "SUPPORTS": 273,
+     "REFUTES": 1510,
+     "NEI": 37,
+     "INVALID": 13
+    },
+    "NEI": {
+     "SUPPORTS": 14,
+     "REFUTES": 26,
+     "NEI": 810,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 95.3,
@@ -1986,6 +2234,37 @@
  "deepseek-v4-flash__text2sql": {
   "model": "deepseek-chat",
   "setting": "text2sql",
+  "all": {
+   "n": 4279,
+   "accuracy": 73.6,
+   "macro_f1": 76.4,
+   "f1": {
+    "SUPPORTS": 66.8,
+    "REFUTES": 73.1,
+    "NEI": 89.2
+   },
+   "invalid": 56,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 982,
+     "REFUTES": 556,
+     "NEI": 33,
+     "INVALID": 25
+    },
+    "REFUTES": {
+     "SUPPORTS": 345,
+     "REFUTES": 1427,
+     "NEI": 35,
+     "INVALID": 26
+    },
+    "NEI": {
+     "SUPPORTS": 18,
+     "REFUTES": 88,
+     "NEI": 739,
+     "INVALID": 5
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 83.2,
@@ -2234,6 +2513,37 @@
  "deepseek-v4-pro__claim-only": {
   "model": "deepseek-v4-pro",
   "setting": "claim-only",
+  "all": {
+   "n": 4279,
+   "accuracy": 19.9,
+   "macro_f1": 11.0,
+   "f1": {
+    "SUPPORTS": 0.0,
+    "REFUTES": 0.0,
+    "NEI": 33.1
+   },
+   "invalid": 0,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 1596,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 1833,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 0,
+     "REFUTES": 0,
+     "NEI": 850,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 15.0,
@@ -2482,6 +2792,37 @@
  "deepseek-v4-pro__full-table": {
   "model": "deepseek-v4-pro",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 75.3,
+   "macro_f1": 78.4,
+   "f1": {
+    "SUPPORTS": 73.5,
+    "REFUTES": 70.2,
+    "NEI": 91.4
+   },
+   "invalid": 19,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1316,
+     "REFUTES": 260,
+     "NEI": 3,
+     "INVALID": 17
+    },
+    "REFUTES": {
+     "SUPPORTS": 641,
+     "REFUTES": 1182,
+     "NEI": 9,
+     "INVALID": 1
+    },
+    "NEI": {
+     "SUPPORTS": 29,
+     "REFUTES": 94,
+     "NEI": 726,
+     "INVALID": 1
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 74.1,
@@ -2730,6 +3071,37 @@
  "deepseek-v4-pro__oracle-evidence": {
   "model": "deepseek-v4-pro",
   "setting": "oracle-evidence",
+  "all": {
+   "n": 4279,
+   "accuracy": 81.4,
+   "macro_f1": 84.2,
+   "f1": {
+    "SUPPORTS": 78.2,
+    "REFUTES": 77.4,
+    "NEI": 97.1
+   },
+   "invalid": 11,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1358,
+     "REFUTES": 227,
+     "NEI": 0,
+     "INVALID": 11
+    },
+    "REFUTES": {
+     "SUPPORTS": 508,
+     "REFUTES": 1325,
+     "NEI": 0,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 9,
+     "REFUTES": 39,
+     "NEI": 802,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 80.9,
@@ -2978,6 +3350,37 @@
  "deepseek-v4-pro__oracle-program": {
   "model": "deepseek-v4-pro",
   "setting": "oracle-program",
+  "all": {
+   "n": 4279,
+   "accuracy": 76.8,
+   "macro_f1": 80.1,
+   "f1": {
+    "SUPPORTS": 74.8,
+    "REFUTES": 69.1,
+    "NEI": 96.5
+   },
+   "invalid": 9,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1396,
+     "REFUTES": 194,
+     "NEI": 0,
+     "INVALID": 6
+    },
+    "REFUTES": {
+     "SUPPORTS": 733,
+     "REFUTES": 1095,
+     "NEI": 2,
+     "INVALID": 3
+    },
+    "NEI": {
+     "SUPPORTS": 8,
+     "REFUTES": 47,
+     "NEI": 795,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 76.0,
@@ -3226,6 +3629,37 @@
  "glm-5.1__full-table": {
   "model": "glm-5.1",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 71.8,
+   "macro_f1": 75.5,
+   "f1": {
+    "SUPPORTS": 69.1,
+    "REFUTES": 65.7,
+    "NEI": 91.7
+   },
+   "invalid": 12,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1207,
+     "REFUTES": 383,
+     "NEI": 3,
+     "INVALID": 3
+    },
+    "REFUTES": {
+     "SUPPORTS": 684,
+     "REFUTES": 1141,
+     "NEI": 2,
+     "INVALID": 6
+    },
+    "NEI": {
+     "SUPPORTS": 8,
+     "REFUTES": 115,
+     "NEI": 724,
+     "INVALID": 3
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 68.4,
@@ -3474,6 +3908,37 @@
  "gemini-3-flash__full-table": {
   "model": "google/gemini-3-flash-preview",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 88.7,
+   "macro_f1": 89.8,
+   "f1": {
+    "SUPPORTS": 88.3,
+    "REFUTES": 86.2,
+    "NEI": 94.8
+   },
+   "invalid": 11,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1569,
+     "REFUTES": 21,
+     "NEI": 2,
+     "INVALID": 4
+    },
+    "REFUTES": {
+     "SUPPORTS": 366,
+     "REFUTES": 1418,
+     "NEI": 44,
+     "INVALID": 5
+    },
+    "NEI": {
+     "SUPPORTS": 22,
+     "REFUTES": 19,
+     "NEI": 807,
+     "INVALID": 2
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 84.6,
@@ -3722,6 +4187,37 @@
  "gemini-3-flash__react-agent": {
   "model": "google/gemini-3-flash-preview",
   "setting": "react-agent",
+  "all": {
+   "n": 4279,
+   "accuracy": 76.8,
+   "macro_f1": 76.7,
+   "f1": {
+    "SUPPORTS": 76.4,
+    "REFUTES": 78.8,
+    "NEI": 75.0
+   },
+   "invalid": 45,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1272,
+     "REFUTES": 322,
+     "NEI": 1,
+     "INVALID": 1
+    },
+    "REFUTES": {
+     "SUPPORTS": 325,
+     "REFUTES": 1505,
+     "NEI": 1,
+     "INVALID": 2
+    },
+    "NEI": {
+     "SUPPORTS": 135,
+     "REFUTES": 162,
+     "NEI": 511,
+     "INVALID": 42
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 96.9,
@@ -3970,6 +4466,37 @@
  "gpt-5.4-mini__full-table": {
   "model": "openai/gpt-5.4-mini",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 64.0,
+   "macro_f1": 67.5,
+   "f1": {
+    "SUPPORTS": 64.1,
+    "REFUTES": 55.3,
+    "NEI": 83.3
+   },
+   "invalid": 8,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1211,
+     "REFUTES": 378,
+     "NEI": 7,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 912,
+     "REFUTES": 904,
+     "NEI": 17,
+     "INVALID": 0
+    },
+    "NEI": {
+     "SUPPORTS": 62,
+     "REFUTES": 156,
+     "NEI": 624,
+     "INVALID": 8
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 59.9,
@@ -4218,6 +4745,37 @@
  "qwen3-14b__full-table": {
   "model": "qwen3-14b",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 52.3,
+   "macro_f1": 52.5,
+   "f1": {
+    "SUPPORTS": 61.5,
+    "REFUTES": 25.9,
+    "NEI": 70.0
+   },
+   "invalid": 1,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 1417,
+     "REFUTES": 158,
+     "NEI": 21,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 1456,
+     "REFUTES": 328,
+     "NEI": 48,
+     "INVALID": 1
+    },
+    "NEI": {
+     "SUPPORTS": 142,
+     "REFUTES": 213,
+     "NEI": 495,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 51.9,
@@ -4466,6 +5024,37 @@
  "qwen3-8b__full-table": {
   "model": "qwen3-8b",
   "setting": "full-table",
+  "all": {
+   "n": 4279,
+   "accuracy": 47.0,
+   "macro_f1": 45.3,
+   "f1": {
+    "SUPPORTS": 54.6,
+    "REFUTES": 42.4,
+    "NEI": 38.8
+   },
+   "invalid": 1,
+   "confusion": {
+    "SUPPORTS": {
+     "SUPPORTS": 977,
+     "REFUTES": 530,
+     "NEI": 89,
+     "INVALID": 0
+    },
+    "REFUTES": {
+     "SUPPORTS": 935,
+     "REFUTES": 777,
+     "NEI": 120,
+     "INVALID": 1
+    },
+    "NEI": {
+     "SUPPORTS": 70,
+     "REFUTES": 525,
+     "NEI": 255,
+     "INVALID": 0
+    }
+   }
+  },
   "main": {
    "n": 2779,
    "accuracy": 50.3,
