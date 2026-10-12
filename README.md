@@ -18,7 +18,7 @@ Paper: *TRACE-Fact: A Program-Grounded Benchmark with Traceable Evidence for Chi
 
 634 records aggregate (count, sum or mean) over a table that ends with a total row; the REFUTES version is
 what you get if you count the total row in. 866 records come in pairs over the same table: one names
-the edition that is given, the other names a different edition and is NEI. These are the ids from `tf-02805` on. We
+the edition that is given, the other names a different edition and is NEI. These are the ids from `02805` on. We
 added them to test agents that query the tables with SQL, so most of them are medal tables (118 of the
 124 total-row tables).
 
@@ -37,7 +37,7 @@ Files:
 Example (tables, program and evidence left out):
 
 ```json
-{"id": "tf-00088", "claim": "冬奥会奖牌榜上，挪威2014年的金牌数比2010年增加了1枚。", "label": "REFUTES"}
+{"id": "00088", "claim": "冬奥会奖牌榜上，挪威2014年的金牌数比2010年增加了1枚。", "label": "REFUTES"}
 ```
 
 Other fields: `tables`, `program` (skeleton, operators, slots), `evidence_cells`, `context_cells`, `table_topology`,
