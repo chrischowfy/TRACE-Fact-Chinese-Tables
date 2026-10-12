@@ -68,22 +68,22 @@ Full tables, thinking off, label-first prompt. Invalid outputs and failed API ca
 
 | Model / protocol | Acc. | Macro-F1 |
 |---|---|---|
-| Gemini-3-Flash | 88.7 | 89.8 |
-| DeepSeek-V4-Pro | 75.3 | 78.4 |
-| DeepSeek-V4-Flash | 74.1 | 76.0 |
-| GLM-5.1 | 71.8 | 75.5 |
-| Claude-Haiku-4.5 | 67.8 | 72.1 |
-| GPT-5.4-mini | 64.0 | 67.5 |
-| Qwen3-14B | 52.3 | 52.5 |
-| Qwen3-8B | 47.0 | 45.3 |
-| Text-to-SQL (DeepSeek-V4-Flash) | 73.6 | 76.4 |
-| ReAcTable-style agent (DeepSeek-V4-Flash) | 86.1 | 87.8 |
+| Gemini-3-Flash | 88.6 | 89.7 |
+| DeepSeek-V4-Pro | 76.5 | 79.2 |
+| DeepSeek-V4-Flash | 75.4 | 77.9 |
+| GLM-5.1 | 71.5 | 75.3 |
+| Claude-Haiku-4.5 | 67.9 | 72.4 |
+| GPT-5.4-mini | 64.1 | 67.6 |
+| Qwen3.5-9B | 52.2 | 51.6 |
+| Qwen3-14B | 48.9 | 48.0 |
+| Text-to-SQL (DeepSeek-V4-Flash) | 73.0 | 75.9 |
+| ReAcTable-style agent (DeepSeek-V4-Flash) | 86.2 | 87.9 |
 | ReAcTable-style agent (Gemini-3-Flash) | 76.9 | 76.8 |
-| Chain-of-Table-style agent (DeepSeek-V4-Flash) | 49.0 | 57.6 |
+| Chain-of-Table-style agent (DeepSeek-V4-Flash) | 56.9 | 64.0 |
 
 Models other than DeepSeek were only run in the full-table setting (plus the agent with Gemini).
 Claim-only and oracle scores are in `results/results.json`. The agent is `code/eval/react_agent.py`. An earlier
-version (`sql_agents.py`) only showed 6 rows of each query result without saying there were more; it got 83.2.
+version (`sql_agents.py`) only showed 6 rows of each query result without saying there were more; it got 83.6.
 
 ## License
 
