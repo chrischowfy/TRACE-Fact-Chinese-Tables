@@ -31,7 +31,7 @@ Files:
 - `data/quarantine.jsonl`, `data/repairs.jsonl`, `data/known_issues.jsonl` - removed records, rule-based repairs
   (labels unchanged), wording issues we know about
 - `data/stats.json` - counts by label, group, skeleton, domain and topology
-- `predictions/` - raw model outputs and run settings; `results/results.json` - scores
+- `results/results.json` - scores
 - `code/eval/` - prompts, agents, scoring
 
 Example (tables, program and evidence left out):
@@ -56,10 +56,10 @@ with open("data/claims.jsonl", encoding="utf-8") as f:
 ```
 
 Show the model the claim and the tables, compare the answer with `label`. Don't show `program` or the cell fields
-unless you run an oracle setting. Scoring:
+unless you run an oracle setting. To score, write one JSON object per line with `id` and `label`:
 
 ```bash
-python code/eval/score.py --claims data/claims.jsonl --pred flash=predictions/deepseek-chat__full-table/predictions.jsonl
+python code/eval/score.py --claims data/claims.jsonl --pred mymodel=my_predictions.jsonl
 ```
 
 ## Results
@@ -82,9 +82,8 @@ Full tables, thinking off, label-first prompt. Invalid outputs and failed API ca
 | Chain-of-Table-style agent (DeepSeek-V4-Flash) | 49.0 | 57.6 |
 
 Models other than DeepSeek were only run in the full-table setting (plus the agent with Gemini).
-Claim-only and oracle runs are in `predictions/` too. The agent is `code/eval/react_agent.py`. An earlier version
-(`sql_agents.py`) only showed 6 rows of each query result without saying there were more; it got 83.2
-(`predictions/deepseek-chat__reactable`).
+Claim-only and oracle scores are in `results/results.json`. The agent is `code/eval/react_agent.py`. An earlier
+version (`sql_agents.py`) only showed 6 rows of each query result without saying there were more; it got 83.2.
 
 ## License
 

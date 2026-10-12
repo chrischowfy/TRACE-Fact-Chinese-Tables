@@ -30,8 +30,7 @@
     "NEI": 824,
     "INVALID": 1
    }
-  },
-  "predictions": "predictions/anthropic_claude-haiku-4.5__full-table/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__chain-table": {
   "model": "deepseek-chat",
@@ -64,8 +63,7 @@
     "NEI": 676,
     "INVALID": 78
    }
-  },
-  "predictions": "predictions/deepseek-chat__chain-table/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__claim-only": {
   "model": "deepseek-chat",
@@ -98,8 +96,7 @@
     "NEI": 850,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__claim-only/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__full-table": {
   "model": "deepseek-chat",
@@ -132,8 +129,7 @@
     "NEI": 835,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__full-table/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__oracle-evidence": {
   "model": "deepseek-chat",
@@ -166,8 +162,7 @@
     "NEI": 837,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__oracle-evidence/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__oracle-program": {
   "model": "deepseek-chat",
@@ -200,8 +195,7 @@
     "NEI": 849,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__oracle-program/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__react-agent": {
   "model": "deepseek-chat",
@@ -234,8 +228,7 @@
     "NEI": 802,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__react-agent/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__reactable": {
   "model": "deepseek-chat",
@@ -268,8 +261,7 @@
     "NEI": 810,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-chat__reactable/predictions.jsonl"
+  }
  },
  "deepseek-v4-flash__text2sql": {
   "model": "deepseek-chat",
@@ -302,8 +294,7 @@
     "NEI": 739,
     "INVALID": 5
    }
-  },
-  "predictions": "predictions/deepseek-chat__text2sql/predictions.jsonl"
+  }
  },
  "deepseek-v4-pro__claim-only": {
   "model": "deepseek-v4-pro",
@@ -336,8 +327,7 @@
     "NEI": 850,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-v4-pro__claim-only/predictions.jsonl"
+  }
  },
  "deepseek-v4-pro__full-table": {
   "model": "deepseek-v4-pro",
@@ -370,8 +360,7 @@
     "NEI": 726,
     "INVALID": 1
    }
-  },
-  "predictions": "predictions/deepseek-v4-pro__full-table/predictions.jsonl"
+  }
  },
  "deepseek-v4-pro__oracle-evidence": {
   "model": "deepseek-v4-pro",
@@ -404,8 +393,7 @@
     "NEI": 802,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-v4-pro__oracle-evidence/predictions.jsonl"
+  }
  },
  "deepseek-v4-pro__oracle-program": {
   "model": "deepseek-v4-pro",
@@ -438,8 +426,7 @@
     "NEI": 795,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/deepseek-v4-pro__oracle-program/predictions.jsonl"
+  }
  },
  "glm-5.1__full-table": {
   "model": "glm-5.1",
@@ -472,8 +459,7 @@
     "NEI": 724,
     "INVALID": 3
    }
-  },
-  "predictions": "predictions/glm-5.1__full-table/predictions.jsonl"
+  }
  },
  "gemini-3-flash__full-table": {
   "model": "google/gemini-3-flash-preview",
@@ -506,8 +492,7 @@
     "NEI": 807,
     "INVALID": 2
    }
-  },
-  "predictions": "predictions/google_gemini-3-flash-preview__full-table/predictions.jsonl"
+  }
  },
  "gemini-3-flash__react-agent": {
   "model": "google/gemini-3-flash-preview",
@@ -540,8 +525,7 @@
     "NEI": 512,
     "INVALID": 43
    }
-  },
-  "predictions": "predictions/google_gemini-3-flash-preview__react-agent/predictions.jsonl"
+  }
  },
  "gpt-5.4-mini__full-table": {
   "model": "openai/gpt-5.4-mini",
@@ -574,8 +558,7 @@
     "NEI": 624,
     "INVALID": 8
    }
-  },
-  "predictions": "predictions/openai_gpt-5.4-mini__full-table/predictions.jsonl"
+  }
  },
  "qwen3-14b__full-table": {
   "model": "qwen3-14b",
@@ -608,8 +591,7 @@
     "NEI": 495,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/qwen3-14b__full-table/predictions.jsonl"
+  }
  },
  "qwen3-8b__full-table": {
   "model": "qwen3-8b",
@@ -642,7 +624,6 @@
     "NEI": 255,
     "INVALID": 0
    }
-  },
-  "predictions": "predictions/qwen3-8b__full-table/predictions.jsonl"
+  }
  }
 }
