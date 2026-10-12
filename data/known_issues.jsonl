@@ -1,68 +1,68 @@
-{"id": "tf-00592", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-00597", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01103", "issue": "the claim omits the percentage unit of the column 耕地 面积 (%); the label holds under both readings", "rule": "unit_omitted"}
-{"id": "tf-01160", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01161", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01164", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01169", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01170", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01181", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01182", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01199", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01200", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01208", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01209", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01215", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01219", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01223", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01224", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01226", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01493", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
-{"id": "tf-01666", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-01667", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-01831", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-01832", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-01833", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-01873", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-01875", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-01936", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02001", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02060", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02061", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02109", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02168", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02169", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02206", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02210", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02211", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02213", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02214", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02218", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02219", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
-{"id": "tf-02251", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02280", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02331", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02400", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02401", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02402", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
-{"id": "tf-02402", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02430", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
-{"id": "tf-02430", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02467", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02576", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02643", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-02649", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02650", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02651", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-02652", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-02653", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-02739", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02740", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
-{"id": "tf-02740", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02780", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02781", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02782", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-02785", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
-{"id": "tf-02785", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
-{"id": "tf-03177", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
-{"id": "tf-03178", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "00592", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "00597", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01103", "issue": "the claim omits the percentage unit of the column 耕地 面积 (%); the label holds under both readings", "rule": "unit_omitted"}
+{"id": "01160", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01161", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01164", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01169", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01170", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01181", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01182", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01199", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01200", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01208", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01209", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01215", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01219", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01223", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01224", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01226", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01493", "issue": "decrease written with a signed value (e.g. 下降了-5.4%); the label is correct, but the wording occurs only in REFUTES claims", "rule": "signed_decrease"}
+{"id": "01666", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "01667", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "01831", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "01832", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "01833", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "01873", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "01875", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "01936", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02001", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02060", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02061", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02109", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02168", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02169", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02206", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02210", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02211", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02213", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02214", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02218", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02219", "issue": "the claim uses the column 注释 of 《中东摩天大楼列表》, which holds the construction status, as a category; the label is correct", "rule": "note_column"}
+{"id": "02251", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02280", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02331", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02400", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02401", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02402", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "02402", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02430", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "02430", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02467", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02576", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02643", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "02649", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02650", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02651", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "02652", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "02653", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "02739", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02740", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "02740", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02780", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02781", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02782", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "02785", "issue": "RS_AVG3 prints an integer true value without decimals, so a stated value of the form x.00 occurs only in REFUTES claims; the label is correct, but the wording reveals it", "rule": "refuting_x00"}
+{"id": "02785", "issue": "an average is printed with a trailing zero (e.g. 2546000.00 or 101.80); the program compares at the same number of decimals, so the label is correct", "rule": "trailing_zero"}
+{"id": "03177", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
+{"id": "03178", "issue": "the metric is written 人口人数, from a merged header (人数 under 人口); the label is correct", "rule": "population_wording"}
